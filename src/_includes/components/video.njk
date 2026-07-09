@@ -1,0 +1,26 @@
+<div class="media {{ position | default('tright') }}">
+
+    <div class="media-inner">
+
+        <video controls preload="metadata">
+
+            <source src="{{ video.src }}"
+                    type="{{ video.type }}">
+
+            Your browser does not support video.
+
+        </video>
+
+        {% if video.caption %}
+
+        <div class="media-caption">
+
+            {{ video.caption }}
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</div>

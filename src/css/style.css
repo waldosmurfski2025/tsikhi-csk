@@ -1,0 +1,320 @@
+body{
+
+    margin:0;
+    
+    font-family:Georgia,serif;
+    
+    background:#fff;
+    
+    }
+    
+    header{
+    
+    padding:20px;
+    
+    border-bottom:1px solid #ccc;
+    
+    }
+    
+    .container{
+    
+    display:flex;
+    
+    }
+    
+    aside{
+    
+    width:250px;
+    
+    padding:20px;
+    
+    background:#f2f2f2;
+    
+    }
+    
+    main{
+    
+    flex:1;
+    
+    padding:30px;
+    
+    }
+    
+    footer{
+    
+    padding:20px;
+    
+    border-top:1px solid #ccc;
+    
+    text-align:center;
+    
+    }
+
+    header {
+
+        border-bottom: 1px solid #aaa;
+    
+        padding: 10px 20px;
+    
+    }
+    
+    .logo {
+    
+        display: flex;
+    
+        align-items: center;
+    
+        gap: 15px;
+    
+    }
+    
+    .logo img {
+    
+        width: 70px;
+    
+        height: auto;
+    
+    }
+    
+    .logo h1 {
+    
+        margin: 0;
+    
+        font-size: 2rem;
+    
+    }
+    
+    .logo p {
+    
+        margin: 5px 0 0;
+    
+        font-size: 1rem;
+    
+        color: #555;
+    
+    }
+
+        /* ---------- Infobox ---------- */
+
+    .infobox {
+
+        float: right;
+    
+        width: 300px;
+    
+        margin: 0 0 1em 1em;
+    
+        border: 1px solid #a2a9b1;
+    
+        background: #f8f9fa;
+    
+        font-size: 90%;
+    
+    }
+    
+    .infobox h2 {
+    
+        margin: 0;
+    
+        padding: 10px;
+    
+        background: #cedff2;
+    
+        text-align: center;
+    
+        font-size: 1.2em;
+    
+    }
+
+    .infobox h3 {
+    
+        margin: 0;
+    
+        padding: 10px;
+    
+        background: #003c6e;
+    
+        text-align: center;
+    
+        font-size: 1em;
+
+        color: #fff;
+    
+    }
+    
+    .infobox img {
+    
+        width: 100%;
+    
+        display: block;
+    
+    }
+    
+    .infobox table {
+    
+        width: 100%;
+    
+        border-collapse: collapse;
+    
+    }
+    
+    .infobox th {
+    
+        background: #eaecf0;
+    
+        text-align: left;
+    
+        padding: 6px;
+    
+        width: 35%;
+    
+    }
+    
+    .infobox td {
+    
+        padding: 6px;
+    
+    }
+
+        /* ---------- Thumbnails ---------- */
+
+    .thumb {
+        float: right;
+        clear: right;
+    
+        width: 300px;
+    
+        margin: 0.5em 0 1em 1.4em;
+        padding: 3px;
+    
+        border: 1px solid #c8ccd1;
+        background: #f8f9fa;
+    
+        font-size: 0.88em;
+        text-align: center;
+    
+        box-sizing: border-box;
+    }
+    
+    .thumbinner {
+        width: 100%;
+    }
+    
+    .thumb img {
+        display: block;
+    
+        width: 100%;
+        height: auto;
+    
+        border: 2px solid #c8ccd1;
+        background: white;
+    
+        box-sizing: border-box;
+    }
+    
+    .thumbcaption {
+        padding: 0px 4px 0px;
+    
+        line-height: 1.45;
+        text-align: left;
+    
+        color: #202122;
+    }
+
+    .tright {
+        float: right;
+    }
+    
+    .tleft {
+        float: left;
+    
+        margin: 0.5em 1.4em 1em 0;
+    }
+    
+    .tnone {
+        float: none;
+    
+        margin: 1em auto;
+    }
+
+/* ==================================================
+   Generic Media Component
+================================================== */
+
+.media {
+
+    width: 320px;
+
+    padding: 3px;
+
+    border: 1px solid #c8ccd1;
+
+    background: #f8f9fa;
+
+    box-sizing: border-box;
+
+    margin-bottom: 1em;
+}
+
+.media-inner {
+
+    width: 100%;
+
+}
+
+.media audio,
+
+.media video {
+
+    width: 100%;
+
+    display: block;
+
+}
+
+.media-caption {
+
+    margin-top: 5px;
+
+    font-size: 0.88em;
+
+    line-height: 1.4;
+
+    text-align: left;
+
+    color: #202122;
+}
+
+/* Right */
+
+.tright {
+
+    float: right;
+
+    clear: right;
+
+    margin: 0 0 1em 1.4em;
+
+}
+
+/* Left */
+
+.tleft {
+
+    float: left;
+
+    clear: left;
+
+    margin: 0 1.4em 1em 0;
+
+}
+
+/* Center / no float */
+
+.tnone {
+
+    float: none;
+
+    margin: 1em auto;
+
+}

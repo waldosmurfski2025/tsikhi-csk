@@ -9,4 +9,4 @@ layout: layout.njk
 
 If you can read this, Eleventy is working.
 
-Read the test [here](/libraries/bio/tsar-karla-i/).
+Read the test <a href="{{ '/libraries/bio/tsar-karla-i/' | url }}">here</a>.

@@ -7,6 +7,6 @@ layout: layout.njk
 
 *From TSIKHI, the Cossackian encyclopedia.*
 
-If you can read this, Eleventy is working.
+A eto tak ty yest' uchit, takaja Eleventy raboczno.
 
-Read the test [here](/libraries/bio/tsar-karla-i/)
+*If you can read this, Eleventy is working. (But in Cossackian.)*

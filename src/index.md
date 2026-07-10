@@ -7,7 +7,7 @@ layout: layout.njk
 
 *From TSIKHI, the Cossackian encyclopedia.*
 
-{% set image="/images/index page/wikipedia-my-beloved.png" %}
+{% set image="/images/indexpage/wikipedia-my-beloved.png" %}
 {% set alt="wikipedia-my-beloved" %}
 {% set caption="Wikipedia—our ultimate inspiration for making this website. If you see this, Wikipedia, we love you so much!" %}
 {% set position="tright" %}

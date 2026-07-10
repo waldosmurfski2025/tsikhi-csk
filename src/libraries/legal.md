@@ -18,6 +18,14 @@ A eto tak ty yest' uchit, takaja Eleventy raboczno.
 
 *If you can read this, Eleventy is working. (But in Cossackian.)*
 
+(Update: We are checking if Legal Library is loading correctly. So, we will put a cute kiggy cat for your convenience! Thank you for surfing!)
+(Yours truly: Karlagrad Technologies Team "Knigu")
+
+<img
+    src="{{ '/images/goofyahhshits/IMG_6757.jpg' | url }}"
+    alt="Cute cat"
+    style="width:25%; height:auto;">
+
 {% set collection = collections[library]
     | sortBy("date")
     | groupBy("era") %}

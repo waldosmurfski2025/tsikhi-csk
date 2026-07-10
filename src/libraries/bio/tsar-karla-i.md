@@ -2,6 +2,15 @@
 title: Tsar Karla I
 layout: layout.njk
 
+library: biography
+
+date: 1979-05-09
+
+era: First Cossackian Empire (1735–1799)
+
+tags:
+    - biography
+
 person:
   title: Tsar of Cossackia
   name: Tsar Karla I
@@ -30,8 +39,8 @@ person:
 {% set position = "tright" %}
 
 {% set audio = {
-    src: "/media/natants/russian-anthem-epic.mp3",
-    type: "audio/mpeg",
+    src: "/media/natants/russian-anthem-epic.ogg",
+    type: "audio/ogg",
     caption: "National Anthem of Cossackia"
 } %}
 

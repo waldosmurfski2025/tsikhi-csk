@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Contact Us
 layout: layout.njk
 ---
 

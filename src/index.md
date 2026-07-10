@@ -43,8 +43,6 @@ The Tsar Karla I History Institute (TSIKHI, pronounced "tsee-khee") is the offic
 
 Through the Cossackian History Directory System (HISDIR-SYS), visitors can browse historical events, biographies, legislation, journalism, maps, and archival records spanning every era of Cossackian history.
 
-
-
 {% set totalArticles =
     (collections.mainevents | default([]) | length)
     + (collections.biography | default([]) | length)

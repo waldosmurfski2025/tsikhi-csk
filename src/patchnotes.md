@@ -1,10 +1,6 @@
 ---
 title: Patch Notes
 layout: layout.njk
-
-library: biography
-
-date: 1696-11-09
 ---
 
 # Patch Notes

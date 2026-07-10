@@ -1,10 +1,10 @@
 ---
-title: Tsar Karla I (Karla Eduardovich Soyokov)
+title: Tsar Eduard I (Eduard Karlovich Soyokov)
 layout: layout.njk
 
 library: biography
 
-date: 1696-11-09
+date: 1604-05-17
 
 era: First Cossackian Empire (1735–1799)
 

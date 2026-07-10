@@ -21,9 +21,23 @@ person:
   party: Soyokovist Party
 ---
 
-{% include "infoboxes/people/monarch.njk" %}
+{% set type = "warning" %}
+{% set title = "Incomplete Article" %}
+{% set message = "Some information in this article is incomplete, and may change." %}
+{% set icon = "/images/system/police-cute.gif" %}
 
-# Tsar Karla I
+{% include "components/notice.njk" %}
+
+{% set type = "danger" %}
+{% set title = "DO NOT REFERENCE OR RESEARCH THIS ARTICLE" %}
+{% set message = "The article may be new or never finished." %}
+{% set icon = "/images/system/dont-toy-with-me-miss-nagatoro-hayase.gif" %}
+
+{% include "components/notice.njk" %}
+
+# Tsar Eduard I
+
+{% include "infoboxes/people/monarch.njk" %}
 
 {% set image="/images/maps/Imperial_Cossackia_1613-1918.png" %}
 {% set alt="Map of Cossackia" %}

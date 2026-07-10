@@ -108,6 +108,7 @@
             <td>    
             <img src="{{ person.signature | url }}"
                  alt="Signature of {{ person.name }}">
+            {{ person.signaturecaption | replace("\n", "<br>") | safe }}
             </td>
         </tr>
         

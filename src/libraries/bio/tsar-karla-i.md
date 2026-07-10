@@ -30,10 +30,13 @@ person:
     Stanislaw Torbek
   born: |
     November 9, 1696
-    Place of birth here
+    Sinyaya Selo,
+    Karlskroniya, Tsardom of Cossackia
   died: |
     December 19, 1764
-    
+    Sinyaya Selo,
+    Karlskroniya, Archduchy of Karlskraja,
+    First Cossackian Empire
   causeofdeath: |
     Asthma attack
   burial: |
@@ -52,7 +55,15 @@ person:
   mother: Maria Teresa of Kyiv
   religion: Roman Catholic
   signature: /images/tsar-karla-i/karla-i-signature-c_1739.png
+  signaturecaption: Karla I's signature during the Treaty of Vyborg. (1739)
 ---
+
+{% set type = "warning" %}
+{% set title = "Incomplete Article" %}
+{% set message = "Some information in this article is incomplete, and may change." %}
+{% set icon = "/images/system/police-cute.gif" %}
+
+{% include "components/notice.njk" %}
 
 # Tsar Karla I
 *From TSIKHI, the Cossackian encyclopedia.*
@@ -66,7 +77,7 @@ person:
 
 {% include "components/thumbnail.njk" %}
 
-**Tsar Karla I** (Cossackian: Карла Эдуардович Соёков; better known as **Karla the Great**; 9 November 1696 – 19 December 1764) was the fifth Tsar of Cossackia.
+**Tsar Karla I** (Cossackian: Карла Эдуардович Соёков; better known as **Karla the Great**; 9 November 1696 – 19 December 1764) was the fifth Tsar of Cossackia. He led the social reforms that established the social welfare, political maneuvering, and the medical advancements of the country.
 
 ## Early life
 

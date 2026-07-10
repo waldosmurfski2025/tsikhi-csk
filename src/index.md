@@ -3,6 +3,18 @@ title: Home
 layout: layout.njk
 ---
 
+<img
+    src="{{ '/images/eventsbanners/tsikhi_update-0.1.6_beta-testing-version.png' | url }}"
+    alt="Cute cat"
+    style="display:block; width:25%; height:auto; margin:1em auto;">
+
+{% set type = "featured" %}
+{% set title = "✨⭐️ Bear hugs, from Cossackia! ⭐️✨ 🐻🐻‍❄️" %}
+{% set message = "Welcome to TSIKHI—Cossackia's national library of histories, cultures, and knowledges you need to know about Cossackia! This website is still under heavy development, so please BEAR with us. <3" %}
+{% set icon = "/images/system/milk-and-mocha-milk-mocha-bear.gif" %}
+
+{% include "components/notice.njk" %}
+
 # Zdrawujce!
 
 *From TSIKHI, the Cossackian encyclopedia.*
@@ -25,12 +37,13 @@ The Tsar Karla I History Institute (TSIKHI, pronounced "tsee-khee") is the offic
 - The Ministry of Science and Technology
 - The Ministry of Social Weather
 - The Ministry of Social Welfare
+- The Ministry of Social Works
 - The Ministry of Tourism
 - The Education Rights Protection Commission
 
 Through the Cossackian History Directory System (HISDIR-SYS), visitors can browse historical events, biographies, legislation, journalism, maps, and archival records spanning every era of Cossackian history.
 
-# We've oficially recorded so far:
+
 
 {% set totalArticles =
     (collections.mainevents | default([]) | length)
@@ -42,7 +55,7 @@ Through the Cossackian History Directory System (HISDIR-SYS), visitors can brows
     + (collections.socialsitetops | default([]) | length)
 %}
 
-# {{ totalArticles }} articles
+## We've oficially recorded so far: {{ totalArticles }} articles
 
 ({{ collections.mainevents | length }} events |
 {{ collections.biography | length }} biographies |

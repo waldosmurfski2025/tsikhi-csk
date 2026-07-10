@@ -1,0 +1,25 @@
+<div class="gallery gallery-{{ mode | default('traditional') }} {{ position | default('tnone') }}">
+
+    {% for item in gallery %}
+
+    <figure class="gallery-item">
+
+        <img
+            src="{{ item.image | url }}"
+            alt="{{ item.alt }}">
+
+        {% if item.caption %}
+
+        <figcaption>
+
+            {{ item.caption }}
+
+        </figcaption>
+
+        {% endif %}
+
+    </figure>
+
+    {% endfor %}
+
+</div>

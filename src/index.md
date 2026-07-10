@@ -8,7 +8,7 @@ layout: layout.njk
 *From TSIKHI, the Cossackian encyclopedia.*
 
 {% set image="/images/index page/wikipedia-my-beloved.png" %}
-{% set alt="Map of Cossackia" %}
+{% set alt="wikipedia-my-beloved" %}
 {% set caption="Wikipedia—our ultimate inspiration for making this website. If you see this, Wikipedia, we love you so much!" %}
 {% set position="tright" %}
 
@@ -29,5 +29,27 @@ The Tsar Karla I History Institute (TSIKHI, pronounced "tsee-khee") is the offic
 - The Education Rights Protection Commission
 
 Through the Cossackian History Directory System (HISDIR-SYS), visitors can browse historical events, biographies, legislation, journalism, maps, and archival records spanning every era of Cossackian history.
+
+# We've oficially recorded so far:
+
+{% set totalArticles =
+    (collections.mainevents | default([]) | length)
+    + (collections.biography | default([]) | length)
+    + (collections.cartography | default([]) | length)
+    + (collections.journalist | default([]) | length)
+    + (collections.legal | default([]) | length)
+    + (collections.miscellaneous | default([]) | length)
+    + (collections.socialsitetops | default([]) | length)
+%}
+
+# {{ totalArticles }} articles
+
+({{ collections.mainevents | length }} events |
+{{ collections.biography | length }} biographies |
+{{ collections.cartography | length }} maps |
+{{ collections.journalist | length }} journalist documents |
+{{ collections.legal | length }} legal documents |
+{{ collections.miscellaneous | length }} miscellanous articles |
+{{ collections.socialsitetops | length }} SITE articles)
 
 Read the test <a href="{{ '/libraries/bio/tsar-karla-i/' | url }}">here</a>. (First ever article, 100% not clickbait or Rick Roll.)

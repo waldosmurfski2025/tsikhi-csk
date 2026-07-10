@@ -4,8 +4,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/images");
     eleventyConfig.addPassthroughCopy("src/media");
 
-    eleventyConfig.addFilter("groupBy", function(collection, key) {
+    eleventyConfig.addFilter("groupBy", function (collection, key) {
 
+        if (!Array.isArray(collection)) {
+            return {};
+        }
+    
         const groups = {};
     
         collection.forEach(item => {
@@ -24,8 +28,12 @@ module.exports = function (eleventyConfig) {
     
     });
 
-    eleventyConfig.addFilter("sortBy", function(collection, key) {
+    eleventyConfig.addFilter("sortBy", function (collection, key) {
 
+        if (!Array.isArray(collection)) {
+            return [];
+        }
+    
         return [...collection].sort((a, b) => {
     
             const aValue = a.data[key];
@@ -49,6 +57,16 @@ module.exports = function (eleventyConfig) {
             year: "numeric"
     
         });
+    
+    });
+
+    eleventyConfig.addFilter("articles", function(collection) {
+
+        if (!Array.isArray(collection)) {
+            return [];
+        }
+    
+        return collection.filter(page => page.data.library);
     
     });
 

@@ -1,6 +1,10 @@
 <aside class="infobox">
 
-    <h2 class="infobox-header monarch">{{ person.name }}</h2>
+    <p>{{ person.title }}</p>
+
+    <h2>{{ person.name }}</h2>
+
+    <p>{{ person.suffixes }}</p>
 
     <img src="{{ person.image | url }}"
          alt="{{ person.name }}">

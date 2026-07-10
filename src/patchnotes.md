@@ -5,53 +5,46 @@ layout: layout.njk
 library: biography
 
 date: 1696-11-09
-
-era: First Cossackian Empire (1735–1799)
-
-tags:
-    - biography
-
-person:
-  title: Tsar of Cossackia
-  name: Tsar Karla I
-  image: /images/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
-  born: November 9, 1696
-  nationality: Russian
-  occupation: Tsar
-  party: Soyokovist Party
 ---
 
-{% include "infoboxes/people/monarch.njk" %}
+# Patch Notes
 
-# Tsar Karla I
+*From TSIKHI, the Cossackian encyclopedia.*
 
-{% set image="/images/maps/Imperial_Cossackia_1613-1918.png" %}
-{% set alt="Map of Cossackia" %}
-{% set caption="Map of the Mainland Cossackian Empire. (1735-1924)" %}
-{% set position="tleft" %}
+{% set gallery = [
 
-{% include "components/thumbnail.njk" %}
+{
+    image: "/images/ptchntspage/Screenshot-2026-07-09-1.37.17AM.png",
+    alt: "Troubleshooting",
+    caption: "1:37 AM — Troubleshooting js.include."
+},
 
-**Tsar Karla I** (Cossackian: Карла Эдуардович Соёков; better known as **Karla the Great**; 9 November 1696 – 19 December 1764) was the fifth Tsar of Cossackia.
+{
+    image: "/images/ptchntspage/Screenshot-2026-07-09-2.52.41AM.png",
+    alt: "Broken page",
+    caption: "2:52 AM — Damaged index.html."
+},
 
-## Early life
+{
+    image: "/images/ptchntspage/Screenshot-2026-07-09-3.10.39AM.png",
+    alt: "Paths fixed",
+    caption: "3:10 AM — Components, links and paths fixed."
+}
 
+] %}
+
+{% set mode = "filmnstrip" %}
 {% set position = "tright" %}
 
-{% set audio = {
-    src: "/media/natants/russian-anthem-epic.ogg",
-    type: "audio/ogg",
-    caption: "National Anthem of Cossackia"
-} %}
+{% include "components/gallery.njk" %}
 
-{% include "components/audio.njk" %}
-
-Yolo
-
-## Political career
-
-Lorem ipsum...
-
-## Legacy
-
-Lorem ipsum...
+## 0.1.0
+- First launch on GitHub.
+- Successful front page and navigation.
+## 0.1.1
+- Successful implementation of media.
+## 0.1.2
+- Fixed js.include.
+- Fixed layout components.
+- Fixed a href links.
+- Fixed paths.

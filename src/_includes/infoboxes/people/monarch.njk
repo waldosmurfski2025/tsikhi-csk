@@ -1,34 +1,116 @@
 <aside class="infobox">
 
-    <h3>{{ person.title }}</h3>
-
-    <h2>{{ person.name }}</h2>
+    <h2 class="infobox-header monarch">
+        {{ person.name }}
+    </h2>
 
     <img src="{{ person.image | url }}"
          alt="{{ person.name }}">
+
+    <div class="infobox-imgcaption">
+        {{ person.imagecaption }}
+    </div>
+
+    <h3 class="infobox-subheader monarch">
+        {{ person.monarchof }}
+    </h3>
+
+    <table>
+
+        <tr>
+            <th>Reign</th>
+            <td>{{ person.reign | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Coronation</th>
+            <td>{{ person.coronation | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Predecessor</th>
+            <td>{{ person.predecessor | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Successor</th>
+            <td>{{ person.successor | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>{{ person.vicetype }}</th>
+            <td>{{ person.viceleaders | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+    </table>
+
+    <h3 class="infobox-subheader monarch"> </h3>
 
     <table>
 
         <tr>
             <th>Born</th>
-            <td>{{ person.born }}</td>
+            <td>{{ person.born | replace("\n", "<br>") | safe }}</td>
         </tr>
 
         <tr>
-            <th>Nationality</th>
-            <td>{{ person.nationality }}</td>
+            <th>Died</th>
+            <td>{{ person.died | replace("\n", "<br>") | safe }}</td>
         </tr>
 
         <tr>
-            <th>Occupation</th>
-            <td>{{ person.occupation }}</td>
+            <th>Cause of death</th>
+            <td>{{ person.causeofdeath | replace("\n", "<br>") | safe }}</td>
         </tr>
 
         <tr>
-            <th>Political Party</th>
-            <td>{{ person.party }}</td>
+            <th>Burial</th>
+            <td>{{ person.burial | replace("\n", "<br>") | safe }}</td>
         </tr>
 
+        <tr>
+            <th>Spouse</th>
+            <td>{{ person.spouse | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Issue</th>
+            <td>{{ person.issue | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Names</th>
+            <td>{{ person.names | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>House</th>
+            <td>{{ person.house | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Father</th>
+            <td>{{ person.father | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Mother</th>
+            <td>{{ person.mother | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Religion</th>
+            <td>{{ person.religion | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
+            <th>Signature</th>
+            <td>    
+            <img src="{{ person.signature | url }}"
+                 alt="Signature of {{ person.name }}">
+            </td>
+        </tr>
+        
     </table>
 
 </aside>

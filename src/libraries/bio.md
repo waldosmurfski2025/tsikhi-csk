@@ -1,15 +1,32 @@
 ---
 title: Biography Library
 layout: layout.njk
+library: biography
 ---
 
 # {{ title }}
 
-*From TSIKHI, the Cossackian encyclopedia.*
+{% set articles = collections[library] | sortBy("date") %}
+{% set collection = articles | groupBy("era") %}
 
-{% set collection = collections.biography
+<p>
+    <i>From TSIKHI, the Cossackian encyclopedia.</i><br>
+    <b>{{ articles | length }}</b> article{% if articles | length != 1 %}s{% endif %}.
+</p>
+
+A eto tak ty yest' uchit, takaja Eleventy raboczno.
+
+*If you can read this, Eleventy is working. (But in Cossackian.)*
+
+{% set collection = collections[library]
     | sortBy("date")
     | groupBy("era") %}
+
+{% if collection | length == 0 %}
+
+<p><i>This library currently contains no articles.</i></p>
+
+{% else %}
 
 {% for era, articles in collection %}
 
@@ -38,3 +55,5 @@ layout: layout.njk
 {% endfor %}
 
 {% endfor %}
+
+{% endif %}

@@ -1,251 +1,225 @@
-body{
-
-    margin:0;
-    
-    font-family:'Times New Roman', Times, serif;
-    
-    background:#fff;
-
-    font-size: 0.75em;
-    
-    }
-    
-    header{
-    
-    padding:20px;
-    
-    border-bottom:1px solid #ccc;
-    
-    }
-    
-    .container{
-    
-    display:flex;
-    
-    }
-    
-    aside{
-    
-    width:250px;
-    
-    padding:20px;
-    
-    background:#f2f2f2;
-    
-    }
-    
-    main{
-    
-    flex:1;
-    
-    padding:30px;
-    
-    }
-    
-    footer{
-    
-    padding:20px;
-    
-    border-top:1px solid #ccc;
-    
-    text-align:center;
-    
-    }
-
-    header {
-
-        border-bottom: 1px solid #aaa;
-    
-        padding: 10px 20px;
-    
-    }
-    
-    .logo {
-    
-        display: flex;
-    
-        align-items: center;
-    
-        gap: 15px;
-    
-    }
-    
-    .logo img {
-    
-        width: 70px;
-    
-        height: auto;
-    
-    }
-    
-    .logo h1 {
-    
-        margin: 0;
-    
-        font-size: 2rem;
-    
-    }
-    
-    .logo p {
-    
-        margin: 5px 0 0;
-    
-        font-size: 1rem;
-    
-        color: #555;
-    
-    }
-
-        /* ---------- Infobox ---------- */
-
-    .infobox {
-
-        float: right;
-    
-        width: 100px;
-    
-        margin: 0 0 1em 1em;
-    
-        border: 1px solid #a2a9b1;
-    
-        background: #f8f9fa;
-    
-        font-size: 90%;
-    
-    }
-    
-    .infobox h2 {
-    
-        margin: 0;
-    
-        padding: 10px;
-    
-        background: #cedff2;
-    
-        text-align: center;
-    
-        font-size: 1.2em;
-    
-    }
-
-    .infobox h3 {
-    
-        margin: 0;
-    
-        padding: 10px;
-    
-        background: #003c6e;
-    
-        text-align: center;
-    
-        font-size: 1em;
-
-        color: #fff;
-    
-    }
-    
-    .infobox img {
-    
-        width: 100%;
-    
-        display: block;
-    
-    }
-    
-    .infobox table {
-    
-        width: 100%;
-    
-        border-collapse: collapse;
-    
-    }
-    
-    .infobox th {
-    
-        background: #eaecf0;
-    
-        text-align: left;
-    
-        padding: 6px;
-    
-        width: 35%;
-    
-    }
-    
-    .infobox td {
-    
-        padding: 6px;
-    
-    }
-
-        /* ---------- Thumbnails ---------- */
-
-    .thumb {
-        float: right;
-        clear: right;
-    
-        width: 300px;
-    
-        margin: 0.5em 0 1em 1.4em;
-        padding: 3px;
-    
-        border: 1px solid #c8ccd1;
-        background: #f8f9fa;
-    
-        font-size: 0.88em;
-        text-align: center;
-    
-        box-sizing: border-box;
-    }
-    
-    .thumbinner {
-        width: 100%;
-    }
-    
-    .thumb img {
-        display: block;
-    
-        width: 100%;
-        height: auto;
-    
-        border: 2px solid #c8ccd1;
-        background: white;
-    
-        box-sizing: border-box;
-    }
-    
-    .thumbcaption {
-        padding: 0px 4px 0px;
-    
-        line-height: 1.45;
-        text-align: left;
-    
-        color: #202122;
-    }
-
-    .tright {
-        float: right;
-    }
-    
-    .tleft {
-        float: left;
-    
-        margin: 0.5em 1.4em 1em 0;
-    }
-    
-    .tnone {
-        float: none;
-    
-        margin: 1em auto;
-    }
-
 /* ==================================================
-   Generic Media Component
+   Base Layout
 ================================================== */
 
-.media {
+body {
+    margin: 0;
+    background: #fff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.75em;
+}
 
-    width: 320px;
+header {
+    padding: 10px 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 250px;
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+footer {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+/* ==================================================
+   Site Header
+================================================== */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.logo p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ==================================================
+   Infobox
+================================================== */
+
+.infobox {
+
+    float: right;
+
+    width: 250px;
+
+    margin: 0 0 1em 1em;
+
+    border: 1px solid #a2a9b1;
+
+    background: #f8f9fa;
+
+    font: 100% Arial, Helvetica, sans-serif;
+
+}
+
+.infobox img {
+
+    display: block;
+
+    width: 100%;
+
+}
+
+.infobox table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+.infobox th {
+
+    width: 35%;
+
+    padding: 6px;
+
+    background: #eaecf0;
+
+    text-align: left;
+
+}
+
+.infobox td {
+
+    padding: 6px;
+
+}
+
+.infobox-imgcaption {
+
+    text-align: center;
+
+    font-size: 1em;
+
+}
+
+/* ==================================================
+   Infobox Headers
+================================================== */
+
+.infobox-header,
+.infobox-subheader {
+
+    margin: 0;
+
+    padding: 8px;
+
+    text-align: center;
+
+    font-weight: bold;
+
+}
+
+.infobox-header {
+
+    font-size: 1.3em;
+
+}
+
+.infobox-subheader {
+
+    font-size: 1em;
+
+    height: auto;
+
+}
+
+/* ==================================================
+   Infobox Themes (Wikipedia-inspired)
+================================================== */
+
+/* Monarch (Royal Purple) */
+
+.infobox-header.monarch,
+.infobox-subheader.monarch {
+
+    background: #b19cd9;
+    color: #202122;
+
+}
+
+/* Country (Geography / Country infobox blue) */
+
+.infobox-header.country,
+.infobox-subheader.country {
+
+    background: #cedff2;
+    color: #202122;
+
+}
+
+/* War (Military olive green) */
+
+.infobox-header.war,
+.infobox-subheader.war {
+
+    background: #c3d6c3;
+    color: #202122;
+
+}
+
+/* Treaty (Gold / diplomatic) */
+
+.infobox-header.treaty,
+.infobox-subheader.treaty {
+
+    background: #f4e3b2;
+    color: #202122;
+
+}
+
+/* Biography (Standard Wikipedia infobox) */
+
+.infobox-header.biography,
+.infobox-subheader.biography {
+
+    background: #eaecf0;
+    color: #202122;
+
+}
+
+/* ==================================================
+   Thumbnail
+================================================== */
+
+.thumb {
+
+    float: right;
+    clear: right;
+
+    width: 250px;
+
+    margin: .5em 0 1em 1.4em;
 
     padding: 3px;
 
@@ -255,22 +229,215 @@ body{
 
     box-sizing: border-box;
 
-    margin-bottom: 1em;
 }
 
-.media-inner {
+.thumbinner {
 
     width: 100%;
+
+}
+
+.thumb img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border: 2px solid #c8ccd1;
+
+}
+
+.thumbcaption {
+
+    padding: 4px;
+
+    line-height: 1.45;
+
+    text-align: left;
+
+}
+
+/* ==================================================
+   Gallery
+================================================== */
+
+.gallery {
+
+    margin: 1em 0;
+
+}
+
+/* ----------------------------------
+   Common
+----------------------------------- */
+
+.gallery-item {
+
+    background: #f8f9fa;
+
+    border: 1px solid #c8ccd1;
+
+    box-sizing: border-box;
+
+    width: 250px ;
+
+}
+
+.gallery-item img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+}
+
+.gallery-item figcaption {
+
+    padding: 4px;
+
+    font-size: .88em;
+
+    text-align: center;
+
+}
+
+.gallery-traditional {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+}
+
+.gallery-traditional .gallery-item {
+
+    width: 220px;
+
+}
+
+.gallery-packed {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+
+}
+
+.gallery-packed .gallery-item {
+
+    flex: 1 1 180px;
+
+}
+
+.gallery-slideshow {
+
+    max-width: 450px;
+
+}
+
+.gallery-slideshow .gallery-item {
+
+    display: none;
+
+}
+
+.gallery-slideshow .gallery-item:first-child {
+
+    display: block;
+
+}
+
+.gallery-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 10px;
+
+}
+
+.gallery-timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.gallery-timeline .gallery-item {
+
+    width: 100%;
+
+}
+
+.gallery-filmstrip {
+
+    display: flex;
+
+    overflow-x: auto;
+
+    gap: 8px;
+
+}
+
+.gallery-filmstrip .gallery-item {
+
+    min-width: 180px;
+
+}
+
+.gallery-mosaic {
+
+    column-count: 3;
+
+    column-gap: 10px;
+
+}
+
+.gallery-mosaic .gallery-item {
+
+    break-inside: avoid;
+
+    margin-bottom: 10px;
+
+}
+
+/* ==================================================
+   Generic Media
+================================================== */
+
+.media {
+
+    width: 250px;
+
+    margin-bottom: 1em;
+
+    padding: 3px;
+
+    border: 1px solid #c8ccd1;
+
+    background: #f8f9fa;
+
+    box-sizing: border-box;
 
 }
 
 .media audio,
-
 .media video {
 
-    width: 100%;
-
     display: block;
+
+    width: 100%;
 
 }
 
@@ -278,16 +445,15 @@ body{
 
     margin-top: 5px;
 
-    font-size: 0.88em;
-
-    line-height: 1.4;
+    font-size: .88em;
 
     text-align: left;
 
-    color: #202122;
 }
 
-/* Right */
+/* ==================================================
+   Floating Helpers
+================================================== */
 
 .tright {
 
@@ -299,8 +465,6 @@ body{
 
 }
 
-/* Left */
-
 .tleft {
 
     float: left;
@@ -311,12 +475,60 @@ body{
 
 }
 
-/* Center / no float */
-
 .tnone {
 
     float: none;
 
     margin: 1em auto;
+
+}
+
+/* ==================================================
+   Headings
+================================================== */
+
+h1 {
+
+    font-size: 2em;
+
+    font-weight: normal;
+
+    margin: 0 0 .6em;
+
+    border-bottom: 3px solid #a2a9b1;
+
+    padding-bottom: .2em;
+
+}
+
+h2 {
+
+    font-size: 1.5em;
+
+    font-weight: normal;
+
+    margin: 1.4em 0 .5em;
+
+    border-bottom: 1px solid #a2a9b1;
+
+    padding-bottom: .2em;
+
+}
+
+h3 {
+
+    font-size: 1.2em;
+
+    font-weight: bold;
+
+    margin: 1.2em 0 .4em;
+
+}
+
+h4 {
+
+    font-size: 1.05em;
+
+    font-weight: bold;
 
 }

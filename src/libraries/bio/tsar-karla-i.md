@@ -13,17 +13,51 @@ tags:
 
 person:
   title: Tsar of Cossackia
+  theme: monarch
   name: Tsar Karla I
   image: /images/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
-  born: November 9, 1696
-  nationality: Russian
-  occupation: Tsar
-  party: Soyokovist Party
+  imagecaption: Karla I in 1740
+  monarchof: Tsar of Cossackia
+  reign: |
+    13 February 1732 –
+    19 December 1764
+  coronation: 14 February 1732
+  predecessor: Eduard IV
+  successor: Karla II
+  vicetype: Viceroys
+  viceleaders: |
+    Felip Dostoyevsky
+    Stanislaw Torbek
+  born: |
+    November 9, 1696
+    Place of birth here
+  died: |
+    December 19, 1764
+    
+  causeofdeath: |
+    Asthma attack
+  burial: |
+    12 November 2024
+    Chapel of the Holy Family,
+    Karlagrad
+  spouse: Jadwiga of Krakow
+  issue: |
+    Karla II
+    Archduchess Elizabeth
+  names: |
+    Karla Eduardovich Soyokov
+    Karla Eduard Sojokowski
+  house: Soyokov
+  father: Eduard IV of Cossackia
+  mother: Maria Teresa of Kyiv
+  religion: Roman Catholic
+  signature: /images/tsar-karla-i/karla-i-signature-c_1739.png
 ---
 
-{% include "infoboxes/people/monarch.njk" %}
-
 # Tsar Karla I
+*From TSIKHI, the Cossackian encyclopedia.*
+
+{% include "infoboxes/people/monarch.njk" %}
 
 {% set image="/images/maps/Imperial_Cossackia_1613-1918.png" %}
 {% set alt="Map of Cossackia" %}
@@ -35,16 +69,6 @@ person:
 **Tsar Karla I** (Cossackian: Карла Эдуардович Соёков; better known as **Karla the Great**; 9 November 1696 – 19 December 1764) was the fifth Tsar of Cossackia.
 
 ## Early life
-
-{% set position = "tright" %}
-
-{% set audio = {
-    src: "/media/natants/russian-anthem-epic.ogg",
-    type: "audio/ogg",
-    caption: "National Anthem of Cossackia"
-} %}
-
-{% include "components/audio.njk" %}
 
 Yolo
 

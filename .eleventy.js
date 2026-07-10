@@ -15,7 +15,7 @@ module.exports = function (eleventyConfig) {
             output: "_site"
         },
 
-        //pathPrefix: "/tsikhi-csk/" //Comment this, for local devving ONLY!
+        pathPrefix: "/tsikhi-csk/" //Comment this, for local devving ONLY!
     };
 
 };

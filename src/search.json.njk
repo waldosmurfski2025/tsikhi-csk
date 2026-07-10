@@ -1,0 +1,24 @@
+---
+permalink: /search.json
+eleventyExcludeFromCollections: true
+---
+
+[
+{% set first = true %}
+
+{% for page in collections.all | articles %}
+
+{% if not first %},{% endif %}
+{% set first = false %}
+
+{
+    "title": {{ page.data.title | dump | safe }},
+    "url": {{ page.url | url | dump | safe }},
+    "library": {{ page.data.library | default("Unknown") | dump | safe }},
+    "era": {{ page.data.era | default("") | dump | safe }},
+    "date": {{ page.data.date | default("") | dump | safe }}
+}
+
+{% endfor %}
+
+]

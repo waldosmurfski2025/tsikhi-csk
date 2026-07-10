@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("src/images");
     eleventyConfig.addPassthroughCopy("src/media");
+    eleventyConfig.addPassthroughCopy("src/js");
 
     eleventyConfig.addFilter("groupBy", function (collection, key) {
 

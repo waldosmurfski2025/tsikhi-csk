@@ -1,0 +1,67 @@
+{% if references and references.length %}
+
+<h2 id="references">References</h2>
+
+<ol class="references">
+
+{% for ref in references %}
+
+<li>
+
+{% if ref.type == "book" %}
+
+{% if ref.author %}{{ ref.author }}{% endif %}
+{% if ref.year %} ({{ ref.year }}){% endif %}.
+<i>{{ ref.title }}</i>.
+{% if ref.publisher %} {{ ref.publisher }}.{% endif %}
+
+{% elseif ref.type == "website" %}
+
+{% if ref.author %}{{ ref.author }}{% else %}{{ ref.website }}
+{% endif %}
+{% if ref.year %} ({{ ref.year }}){% endif %}.
+<a href="{{ ref.url }}">{{ ref.title }}</a>.
+{% if ref.accessdate %}Retrieved {{ ref.accessdate }}.
+{% endif %}
+
+{% elseif ref.type == "journal" %}
+
+{% if ref.author %}{{ ref.author }}{% endif %}
+{% if ref.year %} ({{ ref.year }}){% endif %}.
+"{{ ref.title }}."
+<i>{{ ref.journal }}</i>
+{% if ref.volume %} {{ ref.volume }}{% endif %}
+{% if ref.issue %}({{ ref.issue }}){% endif %}
+{% if ref.pages %}: {{ ref.pages }}{% endif %}.
+
+{% elseif ref.type == "law" %}
+
+{{ ref.title }}
+{% if ref.decree %} ({{ ref.decree }}){% endif %}
+{% if ref.year %}, {{ ref.year }}{% endif %}.
+
+{% elseif ref.type == "archive" %}
+
+{{ ref.archive }}.
+{% if ref.year %} ({{ ref.year }}){% endif %}.
+<i>{{ ref.title }}</i>.
+{% if ref.location %} {{ ref.location }}.{% endif %}
+
+{% elseif ref.type == "article" %}
+
+<a href="{{ ref.url | url }}">{{ ref.title }}</a>.
+{% if ref.library %} {{ ref.library }} Library.{% endif %}
+
+{% else %}
+
+{{ ref.title }}
+
+{% endif %}
+
+</li>
+
+{% endfor %}
+
+</ol>
+
+{% endif %}

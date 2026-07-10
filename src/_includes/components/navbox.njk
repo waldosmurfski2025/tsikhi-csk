@@ -1,0 +1,59 @@
+{% if navbox %}
+
+<nav class="navbox {{ navbox.theme | default('history') }}">
+
+    {% if navbox.title %}
+
+    <div class="navbox-title">
+        {{ navbox.title }}
+    </div>
+
+    {% endif %}
+
+    {% for section in navbox.sections %}
+
+    <div class="navbox-row">
+
+        <div class="navbox-label">
+            {{ section.label }}
+        </div>
+
+        <div class="navbox-links">
+
+            {% for link in section.links %}
+
+                {% if link.url %}
+
+                    <a href="{{ link.url | url }}">
+                        {{ link.title }}
+                    </a>
+
+                {% else %}
+
+                    <span>{{ link.title }}</span>
+
+                {% endif %}
+
+                {% if link.description %}
+
+                    <span class="navbox-desc">
+                        — {{ link.description }}
+                    </span>
+
+                {% endif %}
+
+                {% if not loop.last %}
+                    <span class="navbox-separator"> • </span>
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</nav>
+
+{% endif %}

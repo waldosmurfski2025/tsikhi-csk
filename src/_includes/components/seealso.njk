@@ -1,0 +1,20 @@
+{% if seealso and seealso.length %}
+
+<h2 id="see-also">See also</h2>
+
+<ul class="see-also">
+
+{% for item in seealso %}
+
+<li>
+
+<a href="{{ item.url | url }}">{{ item.title }}</a>{% if item.description %}&mdash; {{ item.description }}
+{% endif %}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+{% endif %}

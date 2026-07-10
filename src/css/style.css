@@ -671,3 +671,193 @@ h4 {
     font-size:.9em;
 
 }
+
+/* ==================================================
+   References
+================================================== */
+
+.references{
+    margin:0.5em 0;
+    padding-left:1.8em;
+    font-size:.9em;
+    line-height:0.5;
+}
+
+.references li{
+    margin:.25em 0;
+}
+
+.references i{
+    font-style:italic;
+}
+
+.ref-author{
+
+    color:#202122;
+
+}
+
+.ref-publisher{
+
+    color:#54595d;
+
+}
+
+.ref-date{
+
+    color:#72777d;
+
+}
+
+.ref-note{
+
+    color:#72777d;
+
+    font-style:italic;
+
+}
+
+/* =========================================
+   See also
+========================================= */
+
+.see-also{
+
+    margin:0.5em 0 1em 1.5em;
+    padding:0;
+    line-height:0.5;
+
+}
+
+.see-also li{
+
+    margin:.25em 0;
+
+}
+
+/* =========================================
+   Navbox
+========================================= */
+
+.navbox{
+    width:auto;
+    margin:1.25rem auto;
+    border:1px solid #a2a9b1;
+    border-collapse:collapse;
+    background:#f8f9fa;
+    font-size:.9rem;
+}
+
+.navbox-title{
+    padding:.45rem;
+    text-align:center;
+    font-weight:bold;
+    border-bottom:1px solid #a2a9b1;
+}
+
+.navbox-row{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    border-top:1px solid #ddd;
+}
+
+.navbox-label{
+    padding:.4rem .55rem;
+    font-weight:bold;
+    background:#eaecf0;
+}
+
+.navbox-links{
+    padding:.25rem .6rem;
+    line-height:0.5;
+}
+
+.navbox-links a{
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+.navbox-links a:hover{
+    text-decoration:underline;
+}
+
+.navbox-links ul{
+    margin:0;
+    padding-left:1rem;
+}
+
+.navbox-links li{
+    margin:.15rem 0;
+}
+
+@media(max-width:900px){
+
+    .navbox-row{
+        grid-template-columns:1fr;
+    }
+
+    .navbox-label{
+        border-bottom:1px solid #ddd;
+    }
+
+}
+
+/* =========================================
+   Navbox Themes
+========================================= */
+
+.navbox.government .navbox-title{
+    background:#e6b8b8;
+}
+
+.navbox.government .navbox-label{
+    background:#f6e5e5;
+}
+
+.navbox.monarch .navbox-title{
+    background:#b19cd9;
+}
+
+.navbox.monarch .navbox-label{
+    background:#f6e5e5;
+}
+
+.navbox.military .navbox-title{
+    background:#b8d8b8;
+}
+
+.navbox.military .navbox-label{
+    background:#e4f1e4;
+}
+
+.navbox.geography .navbox-title{
+    background:#bcd7ef;
+}
+
+.navbox.geography .navbox-label{
+    background:#e8f2fb;
+}
+
+.navbox.history .navbox-title{
+    background:#e8d49d;
+}
+
+.navbox.history .navbox-label{
+    background:#f7f1dd;
+}
+
+.navbox.religion .navbox-title{
+    background:#efe3be;
+}
+
+.navbox.religion .navbox-label{
+    background:#faf7eb;
+}
+
+.navbox.law .navbox-title{
+    background:#d9d9d9;
+}
+
+.navbox.law .navbox-label{
+    background:#f0f0f0;
+}

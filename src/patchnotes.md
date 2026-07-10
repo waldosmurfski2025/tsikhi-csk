@@ -16,19 +16,19 @@ date: 1696-11-09
 {
     image: "/images/ptchntspage/Screenshot-2026-07-09-1.37.17AM.png",
     alt: "Troubleshooting",
-    caption: "1:37 AM — Troubleshooting js.include."
+    caption: "9 July 2026 1:37 AM — Troubleshooting js.include."
 },
 
 {
     image: "/images/ptchntspage/Screenshot-2026-07-09-2.52.41AM.png",
     alt: "Broken page",
-    caption: "2:52 AM — Damaged index.html."
+    caption: "9 July 2026 2:52 AM — Damaged index.html."
 },
 
 {
     image: "/images/ptchntspage/Screenshot-2026-07-09-3.10.39AM.png",
     alt: "Paths fixed",
-    caption: "3:10 AM — Components, links and paths fixed."
+    caption: "9 July 2026 3:10 AM — Components, links and paths fixed."
 }
 
 ] %}

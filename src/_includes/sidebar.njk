@@ -22,7 +22,31 @@
 
 </ul>
 
+{% if page.toc %}
+
 <hr>
+
+<h3>Contents</h3>
+
+<ul class="sidebar-toc">
+
+{% for item in page.toc %}
+
+<li class="toc-level-{{ item.level }}">
+
+<a href="#{{ item.id }}">
+
+{{ item.number }} {{ item.title }}
+
+</a>
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+{% endif %}
 
 <h3>Support</h3>
 

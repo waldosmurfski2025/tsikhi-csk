@@ -13,12 +13,49 @@ tags:
 
 person:
   title: Tsar of Cossackia
+  theme: monarch
   name: Tsar Karla I
   image: /images/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
-  born: November 9, 1696
-  nationality: Russian
-  occupation: Tsar
-  party: Soyokovist Party
+  imagecaption: Karla I in 1740
+  monarchof: Tsar of Cossackia
+  reign: |
+    13 February 1732 –
+    19 December 1764
+  coronation: 14 February 1732
+  predecessor: Eduard IV
+  successor: Karla II
+  vicetype: Viceroys
+  viceleaders: |
+    Felip Dostoyevsky
+    Stanislaw Torbek
+  born: |
+    November 9, 1696
+    Sinyaya Selo,
+    Karlskroniya, Tsardom of Cossackia
+  died: |
+    December 19, 1764
+    Sinyaya Selo,
+    Karlskroniya, Archduchy of Karlskraja,
+    First Cossackian Empire
+  causeofdeath: |
+    Asthma attack
+  burial: |
+    12 November 2024
+    Chapel of the Holy Family,
+    Karlagrad
+  spouse: Jadwiga of Krakow
+  issue: |
+    Karla II
+    Archduchess Elizabeth
+  names: |
+    Karla Eduardovich Soyokov
+    Karla Eduard Sojokowski
+  house: Soyokov
+  father: Eduard IV of Cossackia
+  mother: Maria Teresa of Kyiv
+  religion: Roman Catholic
+  signature: /images/tsar-karla-i/karla-i-signature-c_1739.png
+  signaturecaption: Karla I's signature during the Treaty of Vyborg. (1739)
 ---
 
 {% set type = "warning" %}
@@ -30,7 +67,9 @@ person:
 
 {% set type = "danger" %}
 {% set title = "DO NOT REFERENCE OR RESEARCH THIS ARTICLE" %}
-{% set message = "The article may be new or never finished." %}
+{% set message = "The article may be new or never finished.
+
+This article is also chosen to try out our new layout, which will be applied on everything, btw." %}
 {% set icon = "/images/system/dont-toy-with-me-miss-nagatoro-hayase.gif" %}
 
 {% include "components/notice.njk" %}

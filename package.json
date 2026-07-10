@@ -14,5 +14,12 @@
   "type": "commonjs",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6"
+  },
+  "dependencies": {
+    "markdown-it": "^14.3.0",
+    "markdown-it-anchor": "^9.2.1",
+    "markdown-it-table-of-contents": "^1.2.0",
+    "node-html-parser": "^9.0.0",
+    "nunjucks": "^3.2.4"
   }
 }

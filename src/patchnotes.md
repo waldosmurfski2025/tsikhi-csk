@@ -95,3 +95,4 @@ layout: layout.njk
    - New Geography Library.
    - Entities are added, for icons that can be used on things such as order of battle, allegiance, citizenship.
    - In the politicians infobox, the offices are now stackable. Possibly we can finally make an infobox that is limited to only one template, with multiple choices.
+   - We won't change the title at the SITE library. It's funny ahh bro. So cute cuh. 🥀🥀🥀 07-12-2026

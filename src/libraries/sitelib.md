@@ -57,3 +57,11 @@ A eto tak ty yest' uchit, takaja Eleventy raboczno.
 {% endfor %}
 
 {% endif %}
+
+### (Update: "Social Issues, Topics, and Evemts!" Yeah wight, so so cute, ow my gawd. Pls downt huwt me. :3 Here y'all deserve a coughing baby. Good day. Oh yeah, this is deducted from my pay so yeah. Adios.)
+### *(Yours truly: Karlagrad Technologies Team "Knigu")*
+
+<img
+    src="{{ '/images/goofyahhshits/damn-laughbaby.gif' | url }}"
+    alt="Cute cat"
+    style="display:block; width:25%; height:auto; margin:1em auto;">

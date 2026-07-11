@@ -88,3 +88,4 @@ layout: layout.njk
         - Changed the paths for the images, so that they load properly.
      2. 0.1.662
         - Pushed again. 
+        - Updated the patchnotes page. (Duh.)

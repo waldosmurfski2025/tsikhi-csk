@@ -89,3 +89,9 @@ layout: layout.njk
      2. 0.1.662 07-11-2026
         - Pushed again. 
         - Updated the patchnotes page. (Duh.)
+7. 0.1.67 07-11-2026
+   - Added a toggleable sidebar! (Yippie!)
+   - Made the articles much better to see. (We made the CSS much better.)
+   - New Geography Library.
+   - Entities are added, for icons that can be used on things such as order of battle, allegiance, citizenship.
+   - In the politicians infobox, the offices are now stackable. Possibly we can finally make an infobox that is limited to only one template, with multiple choices.

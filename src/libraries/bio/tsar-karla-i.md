@@ -12,7 +12,7 @@ tags:
     - biography
 
 person:
-  title: Tsar of Cossackia
+  title: Honorable
   theme: monarch
   name: Tsar Karla I
   image: /images/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
@@ -183,23 +183,32 @@ title: "Tsars of Cossackia",
 sections: [
 
 {
-label: "Founders",
+label: "Eduardian Era",
 
 links: [
 
 {
-title:"Eduard I",
-url:"/libraries/bio/eduard-i/"
+    title: "Eduard IV",
+    url: "/libraries/bio/eduard-iv/",
+    icon: "/images/flag-repcsk.png"
 },
 
 {
-title:"Eduard II",
-url:"/libraries/bio/eduard-ii/"
+    title: "Eduard II",
+    url: "/libraries/bio/eduard-iv/",
+    icon: "/images/flag-repcsk.png"
 },
 
 {
-title:"Eduard III",
-url:"/libraries/bio/eduard-iii/"
+    title: "Eduard III",
+    url: "/libraries/bio/eduard-iv/",
+    icon: "/images/flag-repcsk.png"
+},
+
+{
+    title: "Eduard IV",
+    url: "/libraries/bio/eduard-iv/",
+    icon: "/images/flag-repcsk.png"
 }
 
 ]
@@ -207,23 +216,20 @@ url:"/libraries/bio/eduard-iii/"
 },
 
 {
-label:"Imperial Era",
+label:"First Imperial Era",
 
 links:[
 
 {
-title:"Eduard IV",
-url:"/libraries/bio/eduard-iv/"
+    title: "Karla I",
+    url: "/libraries/bio/tsar-karla-i/",
+    icon: "/images/flag-repcsk.png"
 },
 
 {
-title:"Karla I",
-url:"/libraries/bio/tsar-karla-i/"
-},
-
-{
-title:"Karla II",
-url:"/libraries/bio/karla-ii/"
+    title: "Karla II",
+    url: "/libraries/bio/karla-ii/",
+    icon: "/images/flag-repcsk.png"
 }
 
 ]

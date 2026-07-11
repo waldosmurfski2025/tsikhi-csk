@@ -20,35 +20,36 @@
 
         <div class="navbox-links">
 
-            {% for link in section.links %}
+{% for link in section.links %}
 
-                {% if link.url %}
+<div class="navbox-link">
 
-                    <a href="{{ link.url | url }}">
-                        {{ link.title }}
-                    </a>
+{% if link.icon %}
+<img
+    src="{{ link.icon | url }}"
+    alt="{{ link.alt or '' }}"
+    class="navbox-icon">
+{% endif %}
 
-                {% else %}
+    {% if link.url %}
+        <a href="{{ link.url | url }}">
+            {{ link.title }}
+        </a>
+    {% else %}
+        {{ link.title }}
+    {% endif %}
 
-                    <span>{{ link.title }}</span>
+    {% if link.description %}
+        <span class="navbox-description">
+            — {{ link.description }}
+        </span>
+    {% endif %}
 
-                {% endif %}
+</div>
 
-                {% if link.description %}
+{% endfor %}
 
-                    <span class="navbox-desc">
-                        — {{ link.description }}
-                    </span>
-
-                {% endif %}
-
-                {% if not loop.last %}
-                    <span class="navbox-separator"> • </span>
-                {% endif %}
-
-            {% endfor %}
-
-        </div>
+</div>
 
     </div>
 

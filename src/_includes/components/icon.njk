@@ -1,0 +1,8 @@
+{% if image %}
+
+<img
+    src="{{ image | url }}"
+    alt="{{ alt | default('') }}"
+    class="icon {{ class | default('') }}">
+
+{% endif %}

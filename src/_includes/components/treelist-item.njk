@@ -1,0 +1,43 @@
+<li>
+
+<div class="entity-entry">
+
+{% if entity.icon %}
+<img
+    src="{{ entity.icon | url }}"
+    class="entity-icon"
+    alt="">
+{% endif %}
+
+{% if entity.url %}
+<a href="{{ entity.url | url }}">
+    {{ entity.title }}
+</a>
+{% else %}
+{{ entity.title }}
+{% endif %}
+
+{% if entity.description %}
+<span class="entity-description">
+    — {{ entity.description }}
+</span>
+{% endif %}
+
+</div>
+
+{% if entity.children %}
+
+<ul>
+
+{% for child in entity.children %}
+
+{% set entity = child %}
+{% include "components/treelist-item.njk" %}
+
+{% endfor %}
+
+</ul>
+
+{% endif %}
+
+</li>

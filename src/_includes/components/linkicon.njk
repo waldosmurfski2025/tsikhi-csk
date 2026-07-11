@@ -1,0 +1,16 @@
+{% if url %}
+<a href="{{ url | url }}" class="linkicon">
+{% endif %}
+
+{% if icon %}
+<img
+    src="{{ icon | url }}"
+    alt="{{ alt or '' }}"
+    class="linkicon-icon">
+{% endif %}
+
+<span>{{ title }}</span>
+
+{% if url %}
+</a>
+{% endif %}

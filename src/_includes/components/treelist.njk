@@ -1,0 +1,24 @@
+{% if treelist %}
+
+<div class="treelist">
+
+{% for side in treelist %}
+
+<h3>{{ side.heading }}</h3>
+
+<ul class="entity-list">
+
+{% for item in side.items %}
+
+{% set entity = item %}
+{% include "components/treelist-item.njk" %}
+
+{% endfor %}
+
+</ul>
+
+{% endfor %}
+
+</div>
+
+{% endif %}

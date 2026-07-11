@@ -1,7 +1,7 @@
 <aside class="infobox">
 
-    <h2 class="infobox-header monarch">
-        {{ person.name }}
+    <h2 class="infobox-header {{ person.theme }}">
+        {{ person.name | replace("\n", "<br>") | safe }}
     </h2>
 
     <img src="{{ person.image | url }}"
@@ -11,7 +11,7 @@
         {{ person.imagecaption }}
     </div>
 
-    <h3 class="infobox-subheader monarch">
+    <h3 class="infobox-subheader {{ person.theme }}">
         {{ person.monarchof }}
     </h3>
 
@@ -44,7 +44,7 @@
 
     </table>
 
-    <h3 class="infobox-subheader monarch"> </h3>
+    <h3 class="infobox-subheader {{ person.theme }}"> </h3>
 
     <table>
 

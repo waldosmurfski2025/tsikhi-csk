@@ -78,6 +78,11 @@
         </tr>
 
         <tr>
+            <th>Allegiance</th>
+            <td>{{ person.religion | replace("\n", "<br>") | safe }}</td>
+        </tr>
+
+        <tr>
             <th>Religion</th>
             <td>{{ person.religion | replace("\n", "<br>") | safe }}</td>
         </tr>

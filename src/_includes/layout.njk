@@ -30,9 +30,13 @@ href="{{ '/css/style.css' | url }}">
 
 {% include "sidebar.njk" %}
 
-<main>
+<main class="content">
 
-{{ content | safe }}
+    <div class="article-body">
+
+        {{ content | safe }}
+
+    </div>
 
 </main>
 
@@ -41,6 +45,7 @@ href="{{ '/css/style.css' | url }}">
 {% include "footer.njk" %}
 
 <script src="{{ '/js/search.js' | url }}"></script>
+<script src="{{ '/js/sidebar.js' | url }}"></script>
 
 </body>
 

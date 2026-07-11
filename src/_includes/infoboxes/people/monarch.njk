@@ -53,6 +53,8 @@
             <td>{{ person.born | replace("\n", "<br>") | safe }}</td>
         </tr>
 
+        {% if not person.alive %}
+
         <tr>
             <th>Died</th>
             <td>{{ person.died | replace("\n", "<br>") | safe }}</td>
@@ -67,6 +69,8 @@
             <th>Burial</th>
             <td>{{ person.burial | replace("\n", "<br>") | safe }}</td>
         </tr>
+
+        {% endif %}
 
         <tr>
             <th>Spouse</th>

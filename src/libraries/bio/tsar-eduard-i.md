@@ -6,7 +6,7 @@ library: biography
 
 date: 1604-05-17
 
-era: First Cossackian Empire (1735–1799)
+era: Tsardom of Cossackia (1614–1735)
 
 tags:
     - biography
@@ -32,6 +32,7 @@ person:
     November 9, 1696
     Sinyaya Selo,
     Karlskroniya, Tsardom of Cossackia
+  alive: false
   died: |
     December 19, 1764
     Sinyaya Selo,
@@ -75,6 +76,7 @@ This article is also chosen to try out our new layout, which will be applied on 
 {% include "components/notice.njk" %}
 
 # Tsar Eduard I
+*From TSIKHI, the Cossackian encyclopedia.*
 
 {% include "infoboxes/people/monarch.njk" %}
 
@@ -84,6 +86,8 @@ This article is also chosen to try out our new layout, which will be applied on 
 {% set position="tleft" %}
 
 {% include "components/thumbnail.njk" %}
+
+*Uploaded July 9, 2026* | *Updated July 11, 2026*
 
 **Tsar Karla I** (Cossackian: Карла Эдуардович Соёков; better known as **Karla the Great**; 9 November 1696 – 19 December 1764) was the fifth Tsar of Cossackia.
 

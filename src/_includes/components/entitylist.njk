@@ -1,0 +1,43 @@
+{# =======================================================
+   entitylist.njk
+   Generic renderer for linked entities.
+
+   Input:
+   entities = [
+       {
+           title,
+           url,
+           icon,
+           description
+       }
+   ]
+======================================================= #}
+
+{% if entities %}
+
+<div class="entitylist">
+
+{% for entity in entities %}
+
+<div class="entity-entry">
+
+{% if entity.icon %}
+<img
+    src="{{ entity.icon | url }}"
+    class="entity-icon"
+    alt="">
+{% endif %}
+
+{% if entity.url %}
+<a href="{{ entity.url | url }}">{{ entity.title }}</a>
+{% else %}
+{{ entity.title }}
+{% endif %}
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endif %}

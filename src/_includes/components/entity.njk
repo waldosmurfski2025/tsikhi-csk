@@ -1,0 +1,15 @@
+{% if entity %}
+
+<span class="entity-inline">
+    {% if entity.icon %}
+    <img src="{{ entity.icon | url }}" class="entity-icon" alt="{{ entity.title }}">
+    {% endif %}
+
+    {% if entity.url %}
+    <a href="{{ entity.url | url }}">{{ entity.title }}</a>
+    {% else %}
+    {{ entity.title }}
+    {% endif %}
+</span>
+
+{% endif %}

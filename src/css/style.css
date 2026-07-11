@@ -6,12 +6,32 @@ body {
     margin: 0;
     background: #fff;
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.article-body{
+    max-width:1000px;
+    margin:0 auto;
+    line-height:1.6;
+}
+
+.article-body p{
+    margin:.75rem 0;
+}
+
+.article-body ul,
+.article-body ol{
+    line-height:1.55;
+}
+
+.article-body li{
+    margin:.15rem 0;
 }
 
 header {
     padding: 10px 20px;
     border-bottom: 1px solid #aaa;
+    font-size: 14px;
 }
 
 .container {
@@ -23,6 +43,7 @@ aside {
     padding: 20px;
     background: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 main {
@@ -34,6 +55,7 @@ footer {
     padding: 20px;
     border-top: 1px solid #ccc;
     text-align: center;
+    font-size: 14px;
 }
 
 /* ==================================================
@@ -157,7 +179,7 @@ footer {
     text-align: center;
 
     font-weight: bold;
-
+    
 }
 
 .infobox-header {
@@ -709,7 +731,7 @@ h4 {
     margin:0.5em 0;
     padding-left:1.8em;
     font-size:.9em;
-    line-height:0.5;
+    line-height:1.25;
 }
 
 .references li{
@@ -754,7 +776,7 @@ h4 {
 
     margin:0.5em 0 1em 1.5em;
     padding:0;
-    line-height:0.5;
+    line-height:1.25;
 
 }
 
@@ -770,16 +792,16 @@ h4 {
 
 .navbox{
     width:auto;
-    margin:1.25rem auto;
+    margin:1rem auto;
     border:1px solid #a2a9b1;
-    border-collapse:collapse;
     background:#f8f9fa;
-    font-size:.9rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:.88rem;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.25;
 }
 
 .navbox-title{
-    padding:.45rem;
+    padding:.35rem .5rem;
     text-align:center;
     font-weight:bold;
     border-bottom:1px solid #a2a9b1;
@@ -787,29 +809,23 @@ h4 {
 
 .navbox-row{
     display:grid;
-    grid-template-columns:140px 1fr;
+    grid-template-columns:130px 1fr;
     border-top:1px solid #ddd;
 }
 
 .navbox-label{
-    padding:.4rem .55rem;
+    padding:.3rem .45rem;
     font-weight:bold;
     background:#eaecf0;
+    line-height:1.2;
 }
 
 .navbox-links{
-    padding:.25rem .6rem;
-    line-height:0.5;
+    padding:.25rem .45rem;
+    line-height:1.2;
 }
 
-.navbox-links a{
-    text-decoration:none;
-    white-space:nowrap;
-}
-
-.navbox-links a:hover{
-    text-decoration:underline;
-}
+/* Lists */
 
 .navbox-links ul{
     margin:0;
@@ -817,10 +833,30 @@ h4 {
 }
 
 .navbox-links li{
-    margin:.15rem 0;
+    margin:.08rem 0;
 }
 
-@media(max-width:900px){
+/* Links */
+
+.navbox-links a{
+    text-decoration:none;
+    white-space:normal;     /* Allow wrapping */
+}
+
+.navbox-links a:hover{
+    text-decoration:underline;
+}
+
+/* If links are separated by pipes */
+
+.navbox-links .separator{
+    color:#666;
+    margin:0 .15rem;
+}
+
+/* Mobile */
+
+@media (max-width:900px){
 
     .navbox-row{
         grid-template-columns:1fr;
@@ -889,6 +925,15 @@ h4 {
 }
 
 .navbox.law .navbox-label{
+    background:#f0f0f0;
+}
+
+.navbox.kozatskiya .navbox-title{
+    background:#003c6e;
+    color: #fff;
+}
+
+.navbox.kozatskiya .navbox-label{
     background:#f0f0f0;
 }
 
@@ -968,6 +1013,50 @@ h4 {
 }
 
 /* =========================================
+   Shared Entity Components
+========================================= */
+
+.entity-entry{
+    display:flex;
+    align-items:center;
+    gap:.4rem;
+    line-height:1.25;
+}
+
+.entity-inline{
+    display:inline-flex;
+    align-items:center;
+    gap:.35rem;
+    line-height:1.25;
+}
+
+.entity-icon{
+    width:auto;
+    height:14px;
+    object-fit:cover;
+    border:1px solid #a2a9b1;
+    flex-shrink:0;
+    vertical-align:middle;
+}
+
+.entity-entry a,
+.entity-inline a{
+    color:inherit;
+    text-decoration:none;
+}
+
+.entity-entry a:hover,
+.entity-inline a:hover{
+    text-decoration:underline;
+}
+
+.entity-description{
+    color:#666;
+    font-size:.9rem;
+    margin-left:.3rem;
+}
+
+/* =========================================
    Treelist
 ========================================= */
 
@@ -977,66 +1066,134 @@ h4 {
 
 .treelist h3{
     margin:1rem 0 .4rem;
+    padding-bottom:.2rem;
     font-size:1.2rem;
     border-bottom:1px solid #a2a9b1;
-    padding-bottom:.2rem;
 }
 
-/* Root list and nested lists */
+/* Root + nested lists */
 
 .entity-list,
 .entity-list ul{
-    margin:.1rem 0 .1rem 1.25rem;
+    margin:.15rem 0 .15rem 1.25rem;
     padding-left:1rem;
 }
-
-/* List items */
 
 .entity-list li{
     margin:.15rem 0;
     line-height:1.25;
 }
 
-/* Content of each item */
-
-.entity-entry{
-    display:inline-flex;
-    align-items:center;
-    gap:.4rem;
-}
-
-/* Icons */
-
-.entity-icon{
-    width:20px;
-    height:14px;
-    object-fit:cover;
-    border:1px solid #a2a9b1;
-    vertical-align:middle;
-    flex-shrink:0;
-}
-
-/* Links */
-
-.entity-entry a{
-    text-decoration:none;
-}
-
-.entity-entry a:hover{
-    text-decoration:underline;
-}
-
-/* Description */
-
-.entity-description{
-    color:#666;
-    font-size:.9rem;
-    margin-left:.3rem;
-}
-
-/* Nested list indentation */
-
 .entity-list ul{
     border-left:1px solid #ddd;
     padding-left:1rem;
+}
+
+/* =========================================
+   Entity List (Infoboxes, Allegiance, etc.)
+========================================= */
+
+.entitylist{
+    display:flex;
+    flex-direction:column;
+    gap:.35rem;
+}
+
+.entitylist .entity-entry{
+    display:grid;
+    grid-template-columns:22px auto;
+    align-items:center;
+    column-gap:.45rem;
+}
+
+.entitylist .entity-icon{
+    width:auto;
+    height:14px;
+    justify-self:center;
+}
+
+/* ==================================================
+   Sidebar Toggle
+================================================== */
+
+header{
+    padding:.5rem 1rem;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+/* Toggle button */
+
+.sidebar-toggle{
+    width:40px;
+    height:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid #a2a9b1;
+    border-radius:4px;
+
+    background:#fff;
+
+    font-size:1.2rem;
+    cursor:pointer;
+
+    transition:background .2s;
+}
+
+.sidebar-toggle:hover{
+    background:#eaecf0;
+}
+
+/* Page layout */
+
+.layout{
+    display:flex;
+    align-items:flex-start;
+}
+
+/* Sidebar */
+
+.sidebar{
+    flex:0 0 260px;
+    width:260px;
+
+    transition:
+        flex-basis .25s ease,
+        width .25s ease,
+        opacity .2s ease;
+
+    overflow:hidden;
+}
+
+.sidebar.collapsed{
+    flex-basis:0;
+    width:0;
+
+    opacity:0;
+    padding:0;
+    margin:0;
+}
+
+/* Hidden sidebar */
+
+.sidebar.collapsed{
+    width:0;
+    padding:0;
+    opacity:0;
+    border:none;
+}
+
+/* Main content */
+
+.content{
+    flex:1;
+    min-width:0;
+    transition:max-width .25s ease;
 }

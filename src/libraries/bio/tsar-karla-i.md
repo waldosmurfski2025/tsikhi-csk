@@ -12,7 +12,7 @@ tags:
     - biography
 
 person:
-  title: Honorable
+  title: Tsar of Cossackia
   theme: monarch
   name: Tsar Karla I
   image: /images/libraries/bio/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
@@ -32,6 +32,7 @@ person:
     November 9, 1696
     Sinyaya Selo,
     Karlskroniya, Tsardom of Cossackia
+  alive: false
   died: |
     December 19, 1764
     Sinyaya Selo,
@@ -76,6 +77,8 @@ person:
 {% set position="tleft" %}
 
 {% include "components/thumbnail.njk" %}
+
+*Uploaded July 9, 2026* | *Updated July 11, 2026*
 
 **Tsar Karla I** (Cossackian: Карла Эдуардович Соёков; better known as **Karla the Great**; 9 November 1696 – 19 December 1764) was the fifth Tsar of Cossackia. He led the social reforms that established the social welfare, political maneuvering, and the medical advancements of the country.
 

@@ -9,7 +9,7 @@ person:
     Hong Xiaohua
     红小花
   suffixes: KKP OCCC
-  image: /images/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
+  image: /images/libraries/bio/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
   imagecaption: Karla I in 1740
   born: |
     November 9, 1696
@@ -34,7 +34,7 @@ person:
   father: Eduard IV of Cossackia
   mother: Maria Teresa of Kyiv
   religion: Roman Catholic
-  signature: /images/tsar-karla-i/karla-i-signature-c_1739.png
+  signature: /images/libraries/bio/tsar-karla-i/karla-i-signature-c_1739.png
   signaturecaption: Karla I's signature during the Treaty of Vyborg. (1739)
 ---
 

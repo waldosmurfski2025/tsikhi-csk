@@ -1,0 +1,19 @@
+---
+permalink: /api/previews.json
+eleventyExcludeFromCollections: true
+layout: null
+---
+
+[
+{% set first = true %}
+{% for page in collections.all %}
+{% if page.data.preview %}
+{% if not first %},{% endif %}
+{
+  "url": {{ page.url | url | dump | safe }},
+  "preview": {{ page.data.preview | dump | safe }}
+}
+{% set first = false %}
+{% endif %}
+{% endfor %}
+]

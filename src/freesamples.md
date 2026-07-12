@@ -3,18 +3,37 @@ title: Free Samples
 layout: layout.njk
 
 person:
-  title: Honorable
+  title: OH LOOK, AN INFINTE TEMPLATE 🤑🤑🤑
   theme: kozatskiya
   name: |
-    Hong Xiaohua
-    红小花
-  suffixes: KKP OCCC
-  image: /images/libraries/bio/tsar-karla-i/Karla_I_Eduardovich_Soyokov_1740.jpg
-  imagecaption: Karla I in 1740
+    INFINTE TEMPLATE
+  suffixes: INFINITY AND BEYOND
+  image: /images/goofyahhshits/damn-laughbaby.gif
+  imagecaption: NOPE
+  offices:
+
+    - title: YOUR MOM
+    - termtype: Reign
+      term: |
+        9 June 6969 –
+        incumbent
+      preztype: Premier
+      boss: Karla Soyokov
+      predecessor: Karlina Soyokova
+      successor: your mom
+
+  allegiance:
+  - title: People's Republic of China
+    url: https://en.wikipedia.org/wiki/China
+    icon: /images/libraries/flags/modernflags/China.png
+  - title: Republic of China
+    url: https://en.wikipedia.org/wiki/Taiwan
+    icon: /images/libraries/flags/modernflags/Taiwan.png
+  - title: Republic of Cossackia
+    url: /libraries/geography/cossackia/
+    icon: /images/flag-repcsk.png
   born: |
-    November 9, 1696
-    Sinyaya Selo,
-    Karlskroniya, Tsardom of Cossackia
+    YARG
   died: |
     N/A
   causeofdeath: |
@@ -44,9 +63,39 @@ person:
 
 Here, you can see our new assets being loaded in! Have fun!
 
+Hyraxes (from Ancient Greek ὕραξ hýrax 'shrew-mouse'), also called dassies,[1][2] are small, stout, thickset, herbivorous mammals in the family Procaviidae within the order Hyracoidea. Hyraxes are well-furred, rotund animals with short tails.[3] Modern hyraxes are typically between 30 and 70 cm (12 and 28 in) in length and weigh between 2 and 5 kg (4 and 11 lb). They are superficially similar to marmots or over-large pikas but are much more closely related to elephants and sirenians. Hyraxes have a life span of 9 to 14 years. Both types of "rock" hyrax (P. capensis and H. brucei) live on rock outcrops, including cliffs in Ethiopia[4] and isolated granite outcrops called koppies in southern Africa.[5]
+
+Almost all hyraxes are limited to Africa; the exception is the rock hyrax (P. capensis) which is also found in adjacent parts of the Middle East.
+
+Hyracoids were a much more diverse group in the past encompassing species considerably larger than modern hyraxes. The largest known extinct hyracoid, Titanohyrax ultimus, has been estimated to weigh 600–1,300 kilograms (1,300–2,900 lb), comparable to a water buffalo.[6][7]
+
 # Infoboxes
 
 {% include "infoboxes/people/biography.njk" %}
+
+Hyraxes (from Ancient Greek ὕραξ hýrax 'shrew-mouse'), also called dassies,[1][2] are small, stout, thickset, herbivorous mammals in the family Procaviidae within the order Hyracoidea. Hyraxes are well-furred, rotund animals with short tails.[3] Modern hyraxes are typically between 30 and 70 cm (12 and 28 in) in length and weigh between 2 and 5 kg (4 and 11 lb). They are superficially similar to marmots or over-large pikas but are much more closely related to elephants and sirenians. Hyraxes have a life span of 9 to 14 years. Both types of "rock" hyrax (P. capensis and H. brucei) live on rock outcrops, including cliffs in Ethiopia[4] and isolated granite outcrops called koppies in southern Africa.[5]
+
+Almost all hyraxes are limited to Africa; the exception is the rock hyrax (P. capensis) which is also found in adjacent parts of the Middle East.
+
+Hyracoids were a much more diverse group in the past encompassing species considerably larger than modern hyraxes. The largest known extinct hyracoid, Titanohyrax ultimus, has been estimated to weigh 600–1,300 kilograms (1,300–2,900 lb), comparable to a water buffalo.[6][7]
+
+Hyraxes (from Ancient Greek ὕραξ hýrax 'shrew-mouse'), also called dassies,[1][2] are small, stout, thickset, herbivorous mammals in the family Procaviidae within the order Hyracoidea. Hyraxes are well-furred, rotund animals with short tails.[3] Modern hyraxes are typically between 30 and 70 cm (12 and 28 in) in length and weigh between 2 and 5 kg (4 and 11 lb). They are superficially similar to marmots or over-large pikas but are much more closely related to elephants and sirenians. Hyraxes have a life span of 9 to 14 years. Both types of "rock" hyrax (P. capensis and H. brucei) live on rock outcrops, including cliffs in Ethiopia[4] and isolated granite outcrops called koppies in southern Africa.[5]
+
+Almost all hyraxes are limited to Africa; the exception is the rock hyrax (P. capensis) which is also found in adjacent parts of the Middle East.
+
+Hyracoids were a much more diverse group in the past encompassing species considerably larger than modern hyraxes. The largest known extinct hyracoid, Titanohyrax ultimus, has been estimated to weigh 600–1,300 kilograms (1,300–2,900 lb), comparable to a water buffalo.[6][7]
+
+Hyraxes (from Ancient Greek ὕραξ hýrax 'shrew-mouse'), also called dassies,[1][2] are small, stout, thickset, herbivorous mammals in the family Procaviidae within the order Hyracoidea. Hyraxes are well-furred, rotund animals with short tails.[3] Modern hyraxes are typically between 30 and 70 cm (12 and 28 in) in length and weigh between 2 and 5 kg (4 and 11 lb). They are superficially similar to marmots or over-large pikas but are much more closely related to elephants and sirenians. Hyraxes have a life span of 9 to 14 years. Both types of "rock" hyrax (P. capensis and H. brucei) live on rock outcrops, including cliffs in Ethiopia[4] and isolated granite outcrops called koppies in southern Africa.[5]
+
+Almost all hyraxes are limited to Africa; the exception is the rock hyrax (P. capensis) which is also found in adjacent parts of the Middle East.
+
+Hyracoids were a much more diverse group in the past encompassing species considerably larger than modern hyraxes. The largest known extinct hyracoid, Titanohyrax ultimus, has been estimated to weigh 600–1,300 kilograms (1,300–2,900 lb), comparable to a water buffalo.[6][7]
+
+Hyraxes (from Ancient Greek ὕραξ hýrax 'shrew-mouse'), also called dassies,[1][2] are small, stout, thickset, herbivorous mammals in the family Procaviidae within the order Hyracoidea. Hyraxes are well-furred, rotund animals with short tails.[3] Modern hyraxes are typically between 30 and 70 cm (12 and 28 in) in length and weigh between 2 and 5 kg (4 and 11 lb). They are superficially similar to marmots or over-large pikas but are much more closely related to elephants and sirenians. Hyraxes have a life span of 9 to 14 years. Both types of "rock" hyrax (P. capensis and H. brucei) live on rock outcrops, including cliffs in Ethiopia[4] and isolated granite outcrops called koppies in southern Africa.[5]
+
+Almost all hyraxes are limited to Africa; the exception is the rock hyrax (P. capensis) which is also found in adjacent parts of the Middle East.
+
+Hyracoids were a much more diverse group in the past encompassing species considerably larger than modern hyraxes. The largest known extinct hyracoid, Titanohyrax ultimus, has been estimated to weigh 600–1,300 kilograms (1,300–2,900 lb), comparable to a water buffalo.[6][7]
 
 # War Participants
 
@@ -228,3 +277,14 @@ Here, you can see our new assets being loaded in! Have fun!
 ] %}
 
 {% include "components/treelist.njk" %}
+
+# Wiki Preview Card 
+
+<a
+    href="{{ '/libraries/bio/hong-xiaohua/' | url }}"
+    class="article-link"
+    data-page="{{ '/libraries/bio/hong-xiaohua/' | url }}">
+
+    Hong Xiaohua
+
+</a>

@@ -23,6 +23,27 @@
         {{ person.imagecaption }}
     </div>
 
+{% include "components/offices.njk" %}
+
+    {% if person.allegiance %}
+
+<h3 class="infobox-subheader {{ person.theme }}">
+    Allegiance
+</h3>
+
+    <table>
+
+        <tr>
+            <th>Allegiance</th>
+            <td>{% set entities = person.allegiance %}
+            {% include "components/entitylist.njk" %}
+            </td>
+        </tr>
+
+    {% endif %}
+
+    </table>
+
     <h3 class="infobox-subheader {{ person.theme }}"> </h3>
 
     <table>
@@ -31,6 +52,8 @@
             <th>Born</th>
             <td>{{ person.born | replace("\n", "<br>") | safe }}</td>
         </tr>
+
+        {% if not person.alive %}
 
         <tr>
             <th>Died</th>
@@ -47,25 +70,39 @@
             <td>{{ person.burial | replace("\n", "<br>") | safe }}</td>
         </tr>
 
+        {% endif %}
+
+        {% if person.spouse %}
+
         <tr>
             <th>Spouse</th>
             <td>{{ person.spouse | replace("\n", "<br>") | safe }}</td>
         </tr>
+
+        {% endif %}
+
+        {% if person.children %}
 
         <tr>
             <th>Children</th>
             <td>{{ person.children | replace("\n", "<br>") | safe }}</td>
         </tr>
 
+        {% endif %}
+
         <tr>
             <th>Names</th>
             <td>{{ person.names | replace("\n", "<br>") | safe }}</td>
         </tr>
 
+        {% if person.housetype %}
+
         <tr>
-            <th>House</th>
+            <th>{{ person.housetype }}</th>
             <td>{{ person.house | replace("\n", "<br>") | safe }}</td>
         </tr>
+
+        {% endif %}
 
         <tr>
             <th>Father</th>
@@ -75,11 +112,6 @@
         <tr>
             <th>Mother</th>
             <td>{{ person.mother | replace("\n", "<br>") | safe }}</td>
-        </tr>
-
-        <tr>
-            <th>Allegiance</th>
-            <td>{{ person.religion | replace("\n", "<br>") | safe }}</td>
         </tr>
 
         <tr>

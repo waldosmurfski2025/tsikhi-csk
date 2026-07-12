@@ -51,16 +51,18 @@ Through the Cossackian History Directory System (HISDIR-SYS), visitors can brows
     + (collections.legal | default([]) | length)
     + (collections.miscellaneous | default([]) | length)
     + (collections.socialsitetops | default([]) | length)
+    + (collections.geography | default([]) | length)
 %}
 
 ## We've oficially recorded so far: {{ totalArticles }} articles
 
-({{ collections.mainevents | length }} events |
+{{ collections.mainevents | length }} events |
 {{ collections.biography | length }} biographies |
 {{ collections.cartography | length }} maps |
 {{ collections.journalist | length }} journalist documents |
 {{ collections.legal | length }} legal documents |
 {{ collections.miscellaneous | length }} miscellanous articles |
-{{ collections.socialsitetops | length }} SITE articles)
+{{ collections.socialsitetops | length }} SITE articles |
+{{ collections.geography | length }} geography articles
 
 Read the test <a href="{{ '/libraries/bio/tsar-karla-i/' | url }}">here</a>. (First ever article, 100% not clickbait or Rick Roll.)

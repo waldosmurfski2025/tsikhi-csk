@@ -88,111 +88,190 @@ footer {
    Infobox
 ================================================== */
 
-.infobox {
+.infobox{
 
-    float: right;
+    float:right;
 
-    width: 275px;
+    width:350px;
 
-    margin: 0 0 1em 1em;
+    margin:0 0 1rem 1rem;
 
-    border: 1px solid #a2a9b1;
+    border:1px solid #a2a9b1;
 
-    background: #f8f9fa;
+    background:#f8f9fa;
 
-    font: 100% Arial, Helvetica, sans-serif;
+    font:100% Arial, Helvetica, sans-serif;
 
-}
+    overflow:hidden;
 
-.infobox img {
-
-    display: block;
-
-    width: 100%;
+    box-sizing:border-box;
 
 }
 
-.infobox table {
+.infobox *{
+    box-sizing:border-box;
+}
 
-    width: 100%;
+/* ==================================================
+   Images
+================================================== */
 
-    border-collapse: collapse;
+.infobox img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+    margin:0;
+
+    border:0;
 
 }
 
-.infobox th {
+.infobox-imgcaption{
 
-    width: 35%;
+    padding:.45rem .6rem;
 
-    padding: 6px;
+    text-align:center;
 
-    background: #eaecf0;
+    font-size:.9rem;
 
-    text-align: left;
-
-}
-
-.infobox td {
-
-    padding: 6px;
-
-}
-
-.infobox-imgcaption {
-
-    text-align: center;
-
-    font-size: 1em;
+    color:#444;
 
 }
 
 /* ==================================================
-   Infobox Headers
+   Headers
 ================================================== */
 
 .infobox-title{
+
+    margin:0;
+
+    padding:.45rem .6rem;
+
     text-align:center;
+
     font-size:1rem;
-    margin:0.35rem 0;
+
+    font-weight:700;
+
 }
 
 .infobox-header{
+
+    margin:0;
+
+    padding:.65rem .6rem;
+
     text-align:center;
-    margin:0.25rem 0;
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
 }
 
 .infobox-suffixes{
+
+    margin:0;
+
+    padding:0 0 .5rem;
+
     text-align:center;
-    font-size:0.9rem;
+
+    font-size:.9rem;
+
     font-weight:600;
+
     color:#555;
-    margin:0.35rem 0 0.6rem;
-}
-
-.infobox-header,
-.infobox-subheader {
-
-    margin: 0;
-
-    padding: 8px;
-
-    text-align: center;
-
-    font-weight: bold;
-    
-}
-
-.infobox-header {
-
-    font-size: 1.3em;
 
 }
 
-.infobox-subheader {
+.infobox-subheader{
 
-    font-size: 1em;
+    margin:0;
 
-    height: auto;
+    padding:.55rem .6rem;
+
+    text-align:center;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    line-height:1.25;
+
+    border-top:1px solid #a2a9b1;
+
+    border-bottom:1px solid #a2a9b1;
+}
+
+/* ==================================================
+   Tables
+================================================== */
+
+.infobox table{
+
+    width:100%;
+
+    margin:0;
+
+    border-collapse:collapse;
+
+    table-layout:fixed;
+
+}
+
+.infobox tr{
+
+    margin:0;
+
+}
+
+.infobox th{
+
+    width:35%;
+
+    padding:.45rem .55rem;
+
+    background:#eaecf0;
+
+    text-align:left;
+
+    vertical-align:top;
+
+    font-weight:700;
+
+}
+
+.infobox td{
+
+    padding:.45rem .55rem;
+
+    vertical-align:top;
+
+    overflow-wrap:anywhere;
+
+}
+
+/* ==================================================
+   Images inside table cells
+================================================== */
+
+.infobox td img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:0 auto .4rem;
 
 }
 
@@ -1196,6 +1275,88 @@ header{
     flex:1;
     min-width:0;
     transition:max-width .25s ease;
+}
+
+/* ==================================================
+   Preview Cards
+================================================== */
+
+.preview-card{
+
+    position:fixed;
+
+    display:none;
+
+    width:340px;
+    max-width:340px;
+
+    background:#fff;
+
+    border:1px solid #a2a9b1;
+    border-radius:8px;
+
+    box-shadow:0 10px 24px rgba(0,0,0,.22);
+
+    overflow:hidden;
+
+    z-index:99999;
+
+    pointer-events:none;
+
+    transition:
+        opacity .12s ease,
+        transform .12s ease;
+
+    opacity:0;
+
+}
+
+.preview-card.show{
+
+    display:block;
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+.preview-image{
+
+    display:block;
+
+    width:100%;
+    height:180px;
+
+    object-fit:cover;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.preview-content{
+
+    padding:.8rem .9rem;
+
+}
+
+.preview-content h3{
+
+    margin:0 0 .35rem;
+
+    font-size:1.05rem;
+    line-height:1.25;
+
+}
+
+.preview-content p{
+
+    margin:0;
+
+    font-size:.9rem;
+
+    line-height:1.45;
+
+    color:#444;
+
 }
 
 /* ==================================================

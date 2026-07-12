@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html
+    lang="en"
+    data-base="{{ '/' | url }}">
 
 <head>
 
@@ -22,7 +24,7 @@ href="{{ '/css/style.css' | url }}">
 
 </head>
 
-<body>
+<body data-base="{{ '/' | url }}">
 
 {% include "header.njk" %}
 
@@ -44,8 +46,27 @@ href="{{ '/css/style.css' | url }}">
 
 {% include "footer.njk" %}
 
+<div id="preview-card" class="preview-card">
+
+    <img
+        id="preview-image"
+        class="preview-image"
+        src=""
+        alt="">
+
+    <div class="preview-content">
+
+        <h3 id="preview-title"></h3>
+
+        <p id="preview-summary"></p>
+
+    </div>
+
+</div>
+
 <script src="{{ '/js/search.js' | url }}"></script>
 <script src="{{ '/js/sidebar.js' | url }}"></script>
+<script src="{{ '/js/preview.js' | url }}"></script>
 
 </body>
 

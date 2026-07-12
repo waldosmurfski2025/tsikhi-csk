@@ -1,57 +1,57 @@
 {% if person.offices %}
+    {% for office in person.offices %}
 
-{% for office in person.offices %}
+        {% if office.title %}
+            <h3 class="infobox-subheader {{ person.theme }}">
+                {{ office.title }}
+            </h3>
+        {% endif %}
 
-<h3 class="infobox-subheader {{ person.theme }}">
-    {{ office.title }}
-</h3>
+        <table>
 
-<table>
+            {% if office.term %}
+            <tr>
+                <th>{{ office.termtype or "Term" }}</th>
+                <td>{{ office.term | replace("\n","<br>") | safe }}</td>
+            </tr>
+            {% endif %}
 
-{% if office.term %}
-<tr>
-    <th>Term</th>
-    <td>{{ office.term | replace("\n","<br>") | safe }}</td>
-</tr>
-{% endif %}
+            {% if office.coronation %}
+            <tr>
+                <th>Coronation</th>
+                <td>{{ office.coronation | replace("\n","<br>") | safe }}</td>
+            </tr>
+            {% endif %}
 
-{% if office.coronation %}
-<tr>
-    <th>Coronation</th>
-    <td>{{ office.coronation }}</td>
-</tr>
-{% endif %}
+            {% if office.preztype %}
+            <tr>
+                <th>{{ office.preztype }}</th>
+                <td>{{ office.boss | replace("\n","<br>") | safe }}</td>
+            </tr>
+            {% endif %}
 
-{% if office.preztype %}
-<tr>
-    <th>{{ office.preztype }}</th>
-    <td>{{ office.boss | replace("\n","<br>") | safe }}</td>
-</tr>
-{% endif %}
+            {% if office.vicetype %}
+            <tr>
+                <th>{{ office.vicetype }}</th>
+                <td>{{ office.viceleaders | replace("\n","<br>") | safe }}</td>
+            </tr>
+            {% endif %}
 
-{% if office.predecessor %}
-<tr>
-    <th>Predecessor</th>
-    <td>{{ office.predecessor }}</td>
-</tr>
-{% endif %}
+            {% if office.predecessor %}
+            <tr>
+                <th>Predecessor</th>
+                <td>{{ office.predecessor | replace("\n","<br>") | safe }}</td>
+            </tr>
+            {% endif %}
 
-{% if office.successor %}
-<tr>
-    <th>Successor</th>
-    <td>{{ office.successor | replace("\n","<br>") | safe  }}</td>
-</tr>
-{% endif %}
+            {% if office.successor %}
+            <tr>
+                <th>Successor</th>
+                <td>{{ office.successor | replace("\n","<br>") | safe }}</td>
+            </tr>
+            {% endif %}
 
-{% if office.vicetype %}
-<tr>
-    <th>{{ office.vicetype }}</th>
-    <td>{{ office.viceleaders | replace("\n","<br>") | safe }}</td>
-</tr>
-{% endif %}
+        </table>
 
-</table>
-
-{% endfor %}
-
+    {% endfor %}
 {% endif %}

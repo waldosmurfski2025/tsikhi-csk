@@ -395,7 +395,8 @@ links:[
 {
     title: "8. Libona Oblast",
     url: "/error404/",
-    icon: "/images/flag-repcsk.png"
+    icon: "/images/flag-repcsk.png",
+    description:"Proposed federal subject. (Part of the Union of Karlskronia)"
 },
 
 

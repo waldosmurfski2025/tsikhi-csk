@@ -1197,3 +1197,198 @@ header{
     min-width:0;
     transition:max-width .25s ease;
 }
+
+/* ==================================================
+   Mobile Users
+================================================== */
+
+@media (max-width:767px){
+
+    /* -----------------------------------------------
+       General Layout
+    ------------------------------------------------ */
+    
+    .layout{
+        display:block;
+    }
+    
+    .content{
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    
+    .article-body{
+        max-width:100%;
+        padding:0 .9rem;
+    }
+    
+    /* -----------------------------------------------
+       Header
+    ------------------------------------------------ */
+    
+    header{
+        padding:.5rem;
+    }
+    
+    .logo{
+        flex-wrap:wrap;
+        gap:.6rem;
+    }
+    
+    .logo img{
+        max-width:56px;
+        height:auto;
+    }
+    
+    .logo h1{
+        font-size:1.25rem;
+    }
+    
+    .logo p{
+        font-size:.8rem;
+    }
+    
+    /* -----------------------------------------------
+       Sidebar
+    ------------------------------------------------ */
+    
+    .sidebar{
+    
+        position:fixed;
+    
+        top:0;
+        left:0;
+    
+        width:260px;
+        height:100vh;
+    
+        overflow-y:auto;
+    
+        background:#f8f9fa;
+    
+        transform:translateX(-100%);
+    
+        transition:transform .25s ease;
+    
+        z-index:1000;
+    }
+    
+    .sidebar.open{
+        transform:translateX(0);
+    }
+    
+    .sidebar.collapsed{
+        transform:translateX(-100%);
+    }
+    
+    /* -----------------------------------------------
+       Toggle Button
+    ------------------------------------------------ */
+    
+    .sidebar-toggle{
+    
+        width:40px;
+        height:40px;
+    
+        font-size:1.2rem;
+    }
+    
+    /* -----------------------------------------------
+       Infoboxes
+    ------------------------------------------------ */
+    
+    .infobox{
+    
+        float:none;
+    
+        width:100%;
+    
+        margin:1rem 0;
+    }
+    
+    /* -----------------------------------------------
+       Tables
+    ------------------------------------------------ */
+    
+    .table-wrapper{
+    
+        overflow-x:auto;
+    
+    }
+    
+    /* -----------------------------------------------
+       Navboxes
+    ------------------------------------------------ */
+    
+    .navbox{
+    
+        width:100%;
+    }
+    
+    .navbox-row{
+    
+        grid-template-columns:1fr;
+    }
+    
+    .navbox-label{
+    
+        border-bottom:1px solid #ddd;
+    
+        text-align:center;
+    }
+    
+    /* -----------------------------------------------
+       Treelist
+    ------------------------------------------------ */
+    
+    .entity-list,
+    .entity-list ul{
+    
+        margin:.15rem 0 .15rem .8rem;
+    }
+    
+    .entity-icon{
+    
+        height:12px;
+    }
+    
+    /* -----------------------------------------------
+       Images
+    ------------------------------------------------ */
+    
+    img{
+    
+        max-width:100%;
+        height:auto;
+    }
+    
+    /* -----------------------------------------------
+       Thumbnails
+    ------------------------------------------------ */
+    
+    .thumbnail,
+    .thumbnail-left,
+    .thumbnail-right{
+    
+        float:none;
+    
+        display:block;
+    
+        width:100%;
+    
+        margin:1rem auto;
+    }
+    
+    /* -----------------------------------------------
+       Footer
+    ------------------------------------------------ */
+    
+    footer{
+    
+        text-align:center;
+    
+        font-size:.85rem;
+    }
+    
+    }

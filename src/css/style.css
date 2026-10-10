@@ -84,186 +84,72 @@ footer {
     color: #555;
 }
 
-/* ==================================================
-   Infobox
-================================================== */
+/* =========================================================
+   TSIKHI INFOBOX
+   Wikipedia-inspired
+========================================================= */
+
+:root{
+
+    --ibox-bg:#f8f9fa;
+    --ibox-border:#a2a9b1;
+    --ibox-header:#cedff2;
+    --ibox-th:#eaecf0;
+    --ibox-text:#202122;
+
+}
+
+/* =========================================================
+   Container
+========================================================= */
 
 .infobox{
 
     float:right;
 
-    width:350px;
+    width:330px;
 
-    margin:0 0 1rem 1rem;
+    margin:0 0 1em 1em;
 
-    border:1px solid #a2a9b1;
+    background:var(--ibox-bg);
 
-    background:#f8f9fa;
+    border:1px solid var(--ibox-border);
 
-    font:100% Arial, Helvetica, sans-serif;
+    border-collapse:collapse;
 
-    overflow:hidden;
+    color:var(--ibox-text);
 
-    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+
+    font-size:14px;
+
+    line-height:1.35;
 
 }
 
 .infobox *{
+
     box-sizing:border-box;
+
 }
 
-/* ==================================================
+.infobox td>*{
+
+    margin:0;
+
+}
+
+.infobox td br{
+
+    line-height:1;
+
+}
+
+/* =========================================================
    Images
-================================================== */
+========================================================= */
 
 .infobox img{
-
-    display:block;
-
-    width:100%;
-
-    height:auto;
-
-    margin:0;
-
-    border:0;
-
-}
-
-.infobox-imgcaption{
-
-    padding:.45rem .6rem;
-
-    text-align:center;
-
-    font-size:.9rem;
-
-    color:#444;
-
-}
-
-/* ==================================================
-   Headers
-================================================== */
-
-.infobox-title{
-
-    margin:0;
-
-    padding:.45rem .6rem;
-
-    text-align:center;
-
-    font-size:1rem;
-
-    font-weight:700;
-
-}
-
-.infobox-header{
-
-    margin:0;
-
-    padding:.65rem .6rem;
-
-    text-align:center;
-
-    font-size:1.3rem;
-
-    font-weight:700;
-
-    line-height:1.2;
-
-}
-
-.infobox-suffixes{
-
-    margin:0;
-
-    padding:0 0 .5rem;
-
-    text-align:center;
-
-    font-size:.9rem;
-
-    font-weight:600;
-
-    color:#555;
-
-}
-
-.infobox-subheader{
-
-    margin:0;
-
-    padding:.55rem .6rem;
-
-    text-align:center;
-
-    font-size:.95rem;
-
-    font-weight:700;
-
-    line-height:1.25;
-
-    border-top:1px solid #a2a9b1;
-
-    border-bottom:1px solid #a2a9b1;
-}
-
-/* ==================================================
-   Tables
-================================================== */
-
-.infobox table{
-
-    width:100%;
-
-    margin:0;
-
-    border-collapse:collapse;
-
-    table-layout:fixed;
-
-}
-
-.infobox tr{
-
-    margin:0;
-
-}
-
-.infobox th{
-
-    width:35%;
-
-    padding:.45rem .55rem;
-
-    background:#eaecf0;
-
-    text-align:left;
-
-    vertical-align:top;
-
-    font-weight:700;
-
-}
-
-.infobox td{
-
-    padding:.45rem .55rem;
-
-    vertical-align:top;
-
-    overflow-wrap:anywhere;
-
-}
-
-/* ==================================================
-   Images inside table cells
-================================================== */
-
-.infobox td img{
 
     display:block;
 
@@ -271,7 +157,436 @@ footer {
 
     height:auto;
 
-    margin:0 auto .4rem;
+    margin:auto;
+
+    border:0;
+
+}
+
+/* =========================================================
+   Header
+========================================================= */
+
+.infobox-title{
+
+    text-align:center;
+
+    font-size:.9em;
+
+    font-weight:bold;
+
+}
+
+.infobox-header{
+    background:var(--ibox-header);
+    border-bottom:1px solid var(--ibox-border);
+    padding:.55em;
+    margin: 0;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.25em;
+}
+
+.infobox-altnames{
+
+    margin:0;
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:1.05em;
+
+    font-weight:bold;
+
+}
+
+/* =========================================================
+   Biography
+========================================================= */
+
+.infobox-name{
+
+    text-align:center;
+
+    font-size:1.5em;
+
+}
+
+.infobox-title,
+.infobox-suffixes{
+
+    margin:0;
+
+    text-align:center;
+
+    font-size:1.1rem;
+
+    font-weight:500;
+
+    color:#333;
+
+}
+
+/* =========================================================
+   National Symbols
+========================================================= */
+
+.infobox-symbols{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:1.25em;
+
+    padding:.75em;
+
+    border-bottom:1px solid var(--ibox-border);
+
+}
+
+.symbol-column{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+}
+
+.symbol-images{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flags img{
+
+    max-width:110px;
+
+    max-height:70px;
+
+    border:1px solid var(--ibox-border);
+
+}
+
+.coats img{
+
+    max-width:82px;
+
+    max-height:82px;
+
+}
+
+.infobox-imgcaption{
+
+    margin-top:.45em;
+
+    font-size:.85em;
+
+    text-align:center;
+
+}
+
+/* ==========================================
+   Motto
+========================================== */
+
+.infobox-motto{
+
+    text-align:center;
+
+    padding:10px 8px;
+
+}
+
+.infobox-motto strong{
+
+    display:block;
+
+    margin:0;
+
+    font-size:1.05rem;
+
+    line-height:1.3;
+
+}
+
+.infobox-motto .motto-translation{
+
+    display:block;
+
+    margin-top:.75em;
+
+    color:#444;
+
+    font-style:italic;
+
+    line-height:1.3;
+
+}
+
+/* ==========================================
+   Anthem
+========================================== */
+
+.infobox-anthem{
+
+    text-align:center;
+
+    padding:10px 8px;
+
+}
+
+.infobox-anthem em{
+
+    display:block;
+
+    font-size:1.05rem;
+
+    margin:0 0 .7em;
+
+}
+
+.infobox-anthem audio{
+
+    display:block;
+
+    width:92%;
+
+    margin:0 auto;
+
+}
+
+/* =========================================================
+   Globe
+========================================================= */
+
+.infobox-location{
+
+    text-align:center;
+
+    padding:.75em;
+
+}
+
+.infobox-location img{
+
+    max-width:220px;
+
+}
+
+/* =========================================================
+   Tables
+========================================================= */
+
+.infobox table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.infobox th{
+
+    width:37%;
+
+    background:var(--ibox-th);
+
+    border:1px solid var(--ibox-border);
+
+    padding:.35em .55em;
+
+    text-align:left;
+
+    vertical-align:top;
+
+    font-weight:bold;
+
+}
+
+.infobox td{
+
+    padding:.35em .55em;
+
+    vertical-align:top;
+
+}
+
+.infobox th,
+
+.infobox td{
+
+    padding:4px 6px;
+
+    line-height:1.2;
+
+}
+
+/* remove giant paragraph spacing */
+
+.infobox td p,
+.infobox th p,
+.infobox td div,
+.infobox td ul,
+.infobox td ol{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+/* line breaks should be compact */
+
+.infobox td{
+
+    line-height:1.125
+
+}
+
+/* =========================================================
+   Section Header
+========================================================= */
+
+.infobox-subheader{
+
+    background:var(--ibox-header);
+
+    border-top:1px solid var(--ibox-border);
+
+    border-bottom:1px solid var(--ibox-border);
+
+    padding:.4em;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    font-size:1.25em;
+
+}
+
+/* =========================================================
+   Lists inside cells
+========================================================= */
+
+.infobox-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:0;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.infobox-list-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:.45em;
+
+    margin:0;
+
+    padding:1px 0;
+
+}
+
+.infobox-list-item p,
+.infobox-list-item div{
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.infobox-percent{
+
+    width:3em;
+
+    font-weight:bold;
+
+    flex-shrink:0;
+
+}
+
+/* =========================================================
+   Horizontal Rule
+========================================================= */
+
+.infobox hr{
+
+    margin:.65em 0;
+
+    border:none;
+
+    border-top:1px solid var(--ibox-border);
+
+}
+
+/* ==================================================
+   Utility
+================================================== */
+
+.infobox-motto,
+.infobox-anthem{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.infobox-motto *,
+
+.infobox-anthem *{
+
+    text-align:center;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.table.symbol-table{
+
+    border:0px solid var(--ibox-border);
+
+}
+
+div.symbol-caption{
+
+    text-align: center;
 
 }
 
@@ -579,6 +894,14 @@ footer {
     font-size: .88em;
 
     text-align: left;
+
+}
+
+audio{
+
+    margin:12px auto;
+
+    display:block;
 
 }
 
@@ -1477,7 +1800,7 @@ header{
         overflow-x:auto;
     
     }
-    
+
     /* -----------------------------------------------
        Navboxes
     ------------------------------------------------ */

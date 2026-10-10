@@ -1,0 +1,23 @@
+{% if geography.seal %}
+
+<div class="infobox-seal">
+
+<h3>
+
+{{ geography.seal.title }}
+
+</h3>
+
+<img
+src="{{ geography.seal.image | url }}"
+alt="{{ geography.seal.title }}">
+
+<div class="infobox-imgcaption">
+
+{{ geography.seal.caption }}
+
+</div>
+
+</div>
+
+{% endif %}

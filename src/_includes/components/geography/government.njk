@@ -1,0 +1,33 @@
+{% if geography.government %}
+
+<h3 class="infobox-subheader">
+
+Government
+
+</h3>
+
+<table>
+
+{% for office in geography.government %}
+
+<tr>
+
+<th>
+
+{{ office.office }}
+
+</th>
+
+<td>
+
+{{ office.person }}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endif %}

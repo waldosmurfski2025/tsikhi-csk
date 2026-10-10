@@ -1,0 +1,18 @@
+{% if geography.anthem %}
+
+<tr>
+    <th>Anthem</th>
+    <td class="infobox-anthem">
+
+        <em>{{ geography.anthem.title }}</em>
+
+        {% if geography.anthem.audio %}
+        <audio controls>
+            <source src="{{ geography.anthem.audio | url }}">
+        </audio>
+        {% endif %}
+
+    </td>
+</tr>
+
+{% endif %}

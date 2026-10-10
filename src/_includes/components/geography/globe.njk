@@ -1,0 +1,17 @@
+{% if geography.location and geography.location.globe %}
+
+<div class="infobox-location">
+
+    <img
+        src="{{ geography.location.globe.image | url }}"
+        alt="{{ geography.location.globe.caption }}">
+
+    <div class="infobox-imgcaption">
+
+        {{ geography.location.globe.caption }}
+
+    </div>
+
+</div>
+
+{% endif %}

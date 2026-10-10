@@ -1,0 +1,43 @@
+{% if geography.demographics %}
+
+<h3 class="infobox-subheader {{ geography.theme }}">
+Demographics
+</h3>
+
+<table>
+
+{% for section in geography.demographics %}
+
+<tr>
+
+<th>
+
+{{ section.label }}
+
+</th>
+
+<td>
+
+{% for item in section.items %}
+
+{% if item.percent %}
+
+{{ item.percent }}
+
+{% endif %}
+
+{{ item.name }}
+
+<br>
+
+{% endfor %}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endif %}

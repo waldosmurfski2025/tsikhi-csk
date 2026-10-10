@@ -1,0 +1,57 @@
+{% if geography.economy %}
+
+<h3 class="infobox-subheader {{ geography.theme }}">
+Economy
+</h3>
+
+<table>
+
+{% for section in geography.economy %}
+
+<tr>
+
+<th>
+
+{{ section.label }}
+
+</th>
+
+<td>
+
+{% if section.items %}
+
+{% for item in section.items %}
+
+<strong>{{ item.name }}</strong>
+
+{% if item.value %}
+
+<br>
+
+{{ item.value }}
+
+{% endif %}
+
+{% if not loop.last %}
+
+<br><br>
+
+{% endif %}
+
+{% endfor %}
+
+{% else %}
+
+{{ section.value }}
+
+{% endif %}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endif %}

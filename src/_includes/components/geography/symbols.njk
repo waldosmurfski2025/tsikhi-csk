@@ -1,0 +1,63 @@
+{% if geography.symbols %}
+
+<div class="infobox-symbols">
+
+<table class="symbol-table">
+
+<tr>
+
+{% if geography.symbols.flags %}
+<td class="flags">
+
+<div class="symbol-images">
+
+{% for flag in geography.symbols.flags.images %}
+
+<img
+    src="{{ flag.src | url }}"
+    alt="{{ flag.alt }}">
+
+{% endfor %}
+
+</div>
+
+<div class="symbol-caption">
+
+{{ geography.symbols.flags.caption }}
+
+</div>
+
+</td>
+{% endif %}
+
+{% if geography.symbols.coats %}
+<td class="coats">
+
+<div class="symbol-images">
+
+{% for coa in geography.symbols.coats.images %}
+
+<img
+    src="{{ coa.src | url }}"
+    alt="{{ coa.alt }}">
+
+{% endfor %}
+
+</div>
+
+<div class="symbol-caption">
+
+{{ geography.symbols.coats.caption }}
+
+</div>
+
+</td>
+{% endif %}
+
+</tr>
+
+</table>
+
+</div>
+
+{% endif %}

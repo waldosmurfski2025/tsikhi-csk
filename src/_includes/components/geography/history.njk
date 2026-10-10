@@ -1,0 +1,27 @@
+{% if geography.history %}
+
+<h3 class="infobox-subheader {{ geography.theme }}">
+History
+</h3>
+
+<table>
+
+    {% for row in geography.history %}
+
+    <tr>
+
+        <th>{{ row.label }}</th>
+
+        <td>
+
+            {{ row.value | replace("\n","<br>") | safe }}
+
+        </td>
+
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+{% endif %}

@@ -1,0 +1,18 @@
+{% if geography.motto %}
+
+<tr>
+    <th>Motto</th>
+    <td class="infobox-motto">
+
+        <strong>{{ geography.motto.native }}</strong>
+
+        {% if geography.motto.translation %}
+        <span class="motto-translation">
+            "{{ geography.motto.translation }}"
+        </span>
+        {% endif %}
+
+    </td>
+</tr>
+
+{% endif %}

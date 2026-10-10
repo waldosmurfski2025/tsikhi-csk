@@ -1,0 +1,31 @@
+<aside class="infobox">
+
+{% if geography.title %}
+<p class="infobox-title">{{ geography.title }}</p>
+{% endif %}
+
+<h2 class="infobox-header {{ geography.theme }}">
+{{ geography.name | replace("\n","<br>") | safe }}
+</h2>
+
+{% if geography.altnames %}
+<p class="infobox-altnames">
+{{ geography.altnames }}
+</p>
+{% endif %}
+
+{% include "components/geography/symbols.njk" %}
+
+{% include "components/geography/motto.njk" %}
+{% include "components/geography/anthem.njk" %}
+{% include "components/geography/seal.njk" %}
+{% include "components/geography/globe.njk" %}
+
+{% include "components/geography/government.njk" %}
+{% include "components/geography/history.njk" %}
+{% include "components/geography/geography.njk" %}
+{% include "components/geography/demographics.njk" %}
+{% include "components/geography/economy.njk" %}
+{% include "components/geography/statistics.njk" %}
+
+</aside>
